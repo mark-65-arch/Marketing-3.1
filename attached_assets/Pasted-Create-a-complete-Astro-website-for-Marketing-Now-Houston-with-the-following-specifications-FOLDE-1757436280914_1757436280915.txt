@@ -1,0 +1,85 @@
+Create a complete Astro website for "Marketing Now Houston" with the following specifications:
+FOLDER STRUCTURE:
+src/
+├── layouts/
+│   └── BaseLayout.astro
+├── pages/
+│   ├── index.astro (update existing)
+│   ├── services.astro
+│   └── contact.astro
+├── components/
+│   ├── ServiceCard.astro
+│   └── IndustrySection.astro
+FILE 1: src/layouts/BaseLayout.astro
+Create a complete layout with:
+
+Fixed navigation with mobile hamburger menu
+SEO meta tags optimized for Houston digital marketing
+Schema markup for LocalBusiness targeting Houston
+Footer with service links and local contact info
+Mobile-first responsive design
+Performance optimized (targeting 100/100 Lighthouse)
+
+Navigation should include: Home, Services, About, Contact
+Brand name: "Marketing Now Houston"
+Services: Website Building, SEO Optimization, Business Profile Optimization, AI Search Optimization
+FILE 2: src/pages/index.astro (Homepage)
+Create a conversion-focused homepage targeting these primary keywords:
+
+"hire Houston SEO company for small business"
+"Houston business profile optimization service"
+"AI SEO services for Houston businesses"
+"Houston website redesign experts"
+"get more leads website SEO Houston"
+
+Include these sections:
+
+Hero Section: "Digital Marketing That Delivers Results for Houston Small Businesses" - emphasize credibility, no overpromising
+Services Overview: 4 service cards (Website Building, SEO, Business Profiles, AI Search)
+Industry Focus: Target contractors, medical practices, real estate, legal, restaurants - use industry-specific keywords
+Houston Neighborhoods: Mention Heights, Montrose, Downtown, Sugar Land, Katy, Cypress
+Process-Driven Approach: Emphasize transparency, measurable results, no false guarantees
+Local Trust Signals: Houston-focused, small business understanding
+CTA Section: Contact form and phone number
+
+FILE 3: src/pages/services.astro
+Create detailed services page targeting high-intent keywords:
+Website Building Section: Target "website design for general contractors Houston", "medical website design Houston TX", "realtor website design Houston"
+SEO Optimization Section: Target "Houston contractor SEO services", "best dentist SEO Houston", "law firm SEO services Houston"
+Business Profile Optimization: Target "Google Business Profile setup Houston TX", emphasize reviews, photos, local visibility
+AI Search Optimization: Target "AI SEO services for Houston businesses", mention Google SGE, voice search, zero-click results
+FILE 4: src/pages/contact.astro
+Contact page with:
+
+Contact form optimized for lead generation
+Houston location emphasis
+Service consultation request options
+Local phone number and business hours
+Map placeholder for Houston location
+
+STYLING REQUIREMENTS:
+
+Modern, professional design with blue primary color (#2563eb)
+Mobile-first responsive (works perfectly on all devices)
+Fast loading (optimized for Lighthouse 100/100)
+Clean typography and generous whitespace
+Conversion-focused button styling
+Houston skyline color scheme inspiration
+
+SEO REQUIREMENTS:
+
+All pages must have proper meta titles, descriptions, and keywords
+Schema markup for LocalBusiness, Service, and Organization
+Semantic HTML with proper heading hierarchy (H1, H2, H3)
+Internal linking between pages
+Houston and neighborhood keywords naturally integrated
+AI search optimization with conversational content structure
+
+PERFORMANCE REQUIREMENTS:
+
+Optimized images and assets
+Minimal JavaScript (only for mobile menu)
+Clean, efficient CSS
+Fast loading fonts and resources
+
+Make sure all content emphasizes credibility, process-driven approach, and local Houston expertise without making unrealistic guarantees. Focus on trust-building for a new agency with no reviews yet.
