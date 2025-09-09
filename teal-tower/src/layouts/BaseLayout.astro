@@ -93,9 +93,10 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
       --text-secondary: #4A5568;
       --text-light: #718096;
       --primary-orange: #E85A00;
+      --button-orange: #FF8A4C;
       --secondary-peach: #FFAB91;
       --accent-coral: #FF5722;
-      --accent-terracotta: #BF360C;
+      --accent-terracotta: #E17055;
       --link-orange: #D84315;
       --white: #FFFFFF;
       --shadow: 0 4px 20px rgba(45, 55, 72, 0.1);
@@ -120,7 +121,7 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
     
     /* Navigation Styles */
     .nav-container {
-      background: var(--white);
+      background: linear-gradient(135deg, #FEFCF3 0%, #F8F6F1 50%, #F5F2EA 100%);
       box-shadow: var(--shadow);
       position: fixed;
       top: 0;
@@ -189,7 +190,7 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
     }
     
     .nav-cta {
-      background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
+      background: linear-gradient(135deg, var(--button-orange), var(--accent-terracotta));
       color: white;
       padding: 1rem 2rem;
       border-radius: var(--border-radius);
@@ -202,7 +203,7 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
     }
     
     .nav-cta:hover {
-      background: linear-gradient(135deg, var(--accent-coral), var(--primary-orange));
+      background: linear-gradient(135deg, var(--accent-coral), var(--button-orange));
       transform: translateY(-2px);
       box-shadow: var(--shadow-button-hover);
     }
@@ -380,7 +381,7 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
     }
     
     .btn-primary {
-      background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
+      background: linear-gradient(135deg, var(--button-orange), var(--accent-terracotta));
       color: white;
       padding: 1rem 2rem;
       border-radius: var(--border-radius);
@@ -396,7 +397,7 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
     }
     
     .btn-primary:hover {
-      background: linear-gradient(135deg, var(--accent-coral), var(--primary-orange));
+      background: linear-gradient(135deg, var(--accent-coral), var(--button-orange));
       transform: translateY(-3px);
       box-shadow: var(--shadow-button-hover);
     }
