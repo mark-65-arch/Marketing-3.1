@@ -103,31 +103,39 @@ const houstonAreas = [
     <div class="container">
       <div class="hero-content">
         <h1 class="hero-title">
-          Digital Marketing That Delivers Results for 
+          Honest Digital Marketing for 
           <span class="text-primary">Houston Small Businesses</span>
         </h1>
         <p class="hero-subtitle">
-          Transparent, data-driven marketing strategies that help Houston businesses grow. 
-          No false promises, just measurable results through proven SEO, website design, 
-          and business profile optimization.
+          We're a new agency focused on building trust through transparent processes and measurable results. 
+          No inflated claims, just solid marketing strategies that work for Houston businesses.
         </p>
-        <div class="hero-stats">
-          <div class="stat">
-            <div class="stat-number">100+</div>
-            <div class="stat-label">Houston Businesses Served</div>
+        <div class="hero-values">
+          <div class="value">
+            <div class="value-icon">🌟</div>
+            <div class="value-content">
+              <div class="value-title">New Houston Agency with Fresh Perspective</div>
+              <div class="value-description">Modern strategies without industry baggage</div>
+            </div>
           </div>
-          <div class="stat">
-            <div class="stat-number">85%</div>
-            <div class="stat-label">Average Traffic Increase</div>
+          <div class="value">
+            <div class="value-icon">📊</div>
+            <div class="value-content">
+              <div class="value-title">Data-Driven Approach, Not Empty Promises</div>
+              <div class="value-description">Real metrics and transparent reporting</div>
+            </div>
           </div>
-          <div class="stat">
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Support for Houston Clients</div>
+          <div class="value">
+            <div class="value-icon">🤝</div>
+            <div class="value-content">
+              <div class="value-title">Transparent Process You Can Trust</div>
+              <div class="value-description">Clear communication every step of the way</div>
+            </div>
           </div>
         </div>
         <div class="hero-cta">
           <a href="/contact" class="btn-primary">Get Your Free SEO Audit</a>
-          <a href="tel:(713)555-0123" class="btn-secondary">Call (713) 555-0123</a>
+          <a href="/contact" class="btn-secondary">Contact us for consultation</a>
         </div>
       </div>
     </div>
@@ -266,95 +274,118 @@ const houstonAreas = [
 <style>
   /* Hero Section */
   .hero {
-    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-terracotta) 100%);
     color: white;
-    padding: 6rem 0 4rem;
+    padding: 8rem 0 6rem;
     text-align: center;
   }
   
   .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.2;
   }
   
   .text-primary {
-    color: #fbbf24;
+    color: var(--secondary-peach);
   }
   
   .hero-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    max-width: 700px;
+    font-size: 1.375rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.9;
+    opacity: 0.95;
+    line-height: 1.6;
   }
   
-  .hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 2rem;
+  .hero-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .stat {
-    text-align: center;
+  .value {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: left;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
-  .stat-number {
+  .value:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .value-icon {
     font-size: 2.5rem;
-    font-weight: 700;
-    color: #fbbf24;
+    margin-bottom: 1rem;
   }
   
-  .stat-label {
-    font-size: 0.875rem;
-    opacity: 0.8;
+  .value-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .value-description {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    line-height: 1.5;
   }
   
   .hero-cta {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
   }
   
   /* Services Section */
   .services {
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
   
   .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
   
   .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
   }
   
   .section-subtitle {
-    font-size: 1.125rem;
-    color: #6b7280;
-    max-width: 600px;
+    font-size: 1.25rem;
+    color: var(--text-light);
+    max-width: 700px;
     margin: 0 auto;
+    line-height: 1.6;
   }
   
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
   }
   
   /* Houston Areas */
   .houston-areas {
-    padding: 4rem 0;
-    background: #f9fafb;
+    padding: 5rem 0;
+    background: var(--secondary-bg);
   }
   
   .areas-grid {
@@ -365,75 +396,79 @@ const houstonAreas = [
   }
   
   .area-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
     text-align: center;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
   }
   
   .area-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
   }
   
   .area-card h3 {
-    color: #1f2937;
+    color: var(--text-primary);
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
   }
   
   .area-card p {
-    color: #6b7280;
-    font-size: 0.875rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
   }
   
   /* Process Section */
   .process {
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
   
   .process-steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
   }
   
   .step {
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
   }
   
   .step-number {
-    background: #2563eb;
+    background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
     color: white;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
+    box-shadow: var(--shadow);
   }
   
   .step h3 {
-    color: #1f2937;
-    font-size: 1.25rem;
+    color: var(--text-primary);
+    font-size: 1.375rem;
     font-weight: 600;
     margin-bottom: 1rem;
   }
   
   .step p {
-    color: #6b7280;
+    color: var(--text-light);
+    line-height: 1.6;
   }
   
   /* Trust Signals */
   .trust-signals {
-    padding: 4rem 0;
-    background: #f9fafb;
+    padding: 5rem 0;
+    background: var(--secondary-bg);
   }
   
   .trust-grid {
@@ -444,34 +479,41 @@ const houstonAreas = [
   }
   
   .trust-item {
-    background: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
     text-align: center;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .trust-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
   }
   
   .trust-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .trust-item h3 {
-    color: #1f2937;
-    font-size: 1.25rem;
+    color: var(--text-primary);
+    font-size: 1.375rem;
     font-weight: 600;
     margin-bottom: 1rem;
   }
   
   .trust-item p {
-    color: #6b7280;
+    color: var(--text-light);
+    line-height: 1.6;
   }
   
   /* CTA Section */
   .cta-section {
-    background: #1f2937;
+    background: var(--text-primary);
     color: white;
-    padding: 4rem 0;
+    padding: 5rem 0;
     text-align: center;
   }
   
