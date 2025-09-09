@@ -7,7 +7,6 @@ const services = [
   {
     title: "Website Building",
     description: "Professional, fast-loading websites designed to convert visitors into customers for Houston businesses.",
-    icon: "🌐",
     features: [
       "Mobile-responsive design",
       "Fast loading speeds",
@@ -19,7 +18,6 @@ const services = [
   {
     title: "SEO Optimization",
     description: "Data-driven SEO strategies to help your Houston business rank higher and attract more local customers.",
-    icon: "📈",
     features: [
       "Local Houston SEO",
       "Keyword research & strategy",
@@ -31,7 +29,6 @@ const services = [
   {
     title: "Business Profile Optimization",
     description: "Optimize your Google Business Profile and other listings to dominate local search results in Houston.",
-    icon: "📍",
     features: [
       "Google Business Profile setup",
       "Review management",
@@ -43,7 +40,6 @@ const services = [
   {
     title: "AI Search Optimization",
     description: "Future-proof your business for AI-powered search engines and voice search technologies.",
-    icon: "🤖",
     features: [
       "Google SGE optimization",
       "Voice search optimization",
@@ -349,8 +345,11 @@ const houstonAreas = [
   
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-items: center;
   }
   
   /* Houston Areas */
