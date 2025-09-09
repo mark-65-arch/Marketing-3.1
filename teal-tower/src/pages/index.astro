@@ -103,39 +103,14 @@ const houstonAreas = [
     <div class="container">
       <div class="hero-content">
         <h1 class="hero-title">
-          Honest Digital Marketing for 
-          <span class="text-primary">Houston Small Businesses</span>
+          Digital Marketing That Gets Results for 
+          <span class="text-primary">Houston Businesses</span>
         </h1>
         <p class="hero-subtitle">
-          We're a new agency focused on building trust through transparent processes and measurable results. 
-          No inflated claims, just solid marketing strategies that work for Houston businesses.
+          We help Houston small businesses grow online through transparent SEO, website design, and digital marketing strategies. No false promises, just proven results.
         </p>
-        <div class="hero-values">
-          <div class="value">
-            <div class="value-icon">🌟</div>
-            <div class="value-content">
-              <div class="value-title">New Houston Agency with Fresh Perspective</div>
-              <div class="value-description">Modern strategies without industry baggage</div>
-            </div>
-          </div>
-          <div class="value">
-            <div class="value-icon">📊</div>
-            <div class="value-content">
-              <div class="value-title">Data-Driven Approach, Not Empty Promises</div>
-              <div class="value-description">Real metrics and transparent reporting</div>
-            </div>
-          </div>
-          <div class="value">
-            <div class="value-icon">🤝</div>
-            <div class="value-content">
-              <div class="value-title">Transparent Process You Can Trust</div>
-              <div class="value-description">Clear communication every step of the way</div>
-            </div>
-          </div>
-        </div>
         <div class="hero-cta">
-          <a href="/contact" class="btn-primary">Get Your Free SEO Audit</a>
-          <a href="/contact" class="btn-secondary">Contact us for consultation</a>
+          <a href="/contact" class="btn-primary-hero">GET YOUR FREE SEO AUDIT</a>
         </div>
       </div>
     </div>
@@ -274,8 +249,8 @@ const houstonAreas = [
 <style>
   /* Hero Section */
   .hero {
-    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-terracotta) 100%);
-    color: white;
+    background: var(--white);
+    color: var(--text-primary);
     padding: 8rem 0 6rem;
     text-align: center;
   }
@@ -285,10 +260,11 @@ const houstonAreas = [
     font-weight: 700;
     margin-bottom: 2rem;
     line-height: 1.2;
+    color: var(--text-primary);
   }
   
   .text-primary {
-    color: var(--secondary-peach);
+    color: var(--primary-orange);
   }
   
   .hero-subtitle {
@@ -297,58 +273,38 @@ const houstonAreas = [
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.95;
+    color: var(--text-secondary);
     line-height: 1.6;
   }
   
-  .hero-values {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .value {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: var(--border-radius);
-    padding: 2rem;
-    text-align: left;
-    transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .value:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-5px);
-  }
-  
-  .value-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .value-title {
-    font-size: 1.125rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: white;
-  }
-  
-  .value-description {
-    font-size: 0.95rem;
-    opacity: 0.9;
-    line-height: 1.5;
-  }
   
   .hero-cta {
     display: flex;
-    gap: 1.5rem;
     justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+  
+  .btn-primary-hero {
+    background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
+    color: white;
+    padding: 1.25rem 2.5rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    text-transform: uppercase;
+  }
+  
+  .btn-primary-hero:hover {
+    background: linear-gradient(135deg, var(--accent-coral), var(--primary-orange));
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
   }
   
   /* Services Section */
