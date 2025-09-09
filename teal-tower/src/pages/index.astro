@@ -100,7 +100,7 @@ const houstonAreas = {
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <div class="hero-content">
+      <div class="hero-content" style="position: relative; z-index: 2;">
         <h1 class="hero-title">
           Digital Marketing That Gets <span style="color: #F95738;">Results</span>
         </h1>
@@ -110,6 +110,12 @@ const houstonAreas = {
         <div class="hero-cta">
           <a href="/contact" class="btn-primary-hero">GET YOUR <span style="color: white; font-weight: 800;">FREE</span> SEO AUDIT</a>
         </div>
+      </div>
+      <div class="geometric-shapes">
+        <div class="shape triangle triangle-1"></div>
+        <div class="shape triangle triangle-2"></div>
+        <div class="shape hexagon"></div>
+        <div class="shape small-circle"></div>
       </div>
     </div>
   </section>
@@ -253,15 +259,115 @@ const houstonAreas = {
 <style>
   /* Hero Section */
   .hero {
-    background: 
-      radial-gradient(circle at 25% 25%, rgba(249, 87, 56, 0.25) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(249, 87, 56, 0.15) 0%, transparent 50%),
-      #FEFCF3;
+    background: #FEFCF3;
     color: var(--text-primary);
     padding: 8rem 0 6rem;
     text-align: center;
     position: relative;
     overflow: hidden;
+  }
+
+  .hero::before,
+  .hero::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Large circle - top right */
+  .hero::before {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(249, 87, 56, 0.03));
+    top: -150px;
+    right: -150px;
+  }
+
+  /* Medium circle - bottom left */
+  .hero::after {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, rgba(107, 114, 128, 0.05), transparent);
+    bottom: -100px;
+    left: -100px;
+  }
+
+  /* Additional geometric shapes */
+  .geometric-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .shape {
+    position: absolute;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .triangle-1 {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 43px solid rgba(249, 87, 56, 0.06);
+    top: 25%;
+    left: 15%;
+    transform: rotate(30deg);
+  }
+
+  .triangle-2 {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid rgba(107, 114, 128, 0.04);
+    top: 60%;
+    right: 20%;
+    transform: rotate(-45deg);
+  }
+
+  .hexagon {
+    width: 60px;
+    height: 34.64px;
+    background: rgba(249, 87, 56, 0.05);
+    position: relative;
+    top: 40%;
+    right: 10%;
+  }
+
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+  }
+
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 17.32px solid rgba(249, 87, 56, 0.05);
+  }
+
+  .hexagon:after {
+    top: 100%;
+    border-top: 17.32px solid rgba(249, 87, 56, 0.05);
+  }
+
+  .small-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(107, 114, 128, 0.06);
+    top: 70%;
+    left: 25%;
   }
 
   
@@ -611,6 +717,27 @@ const houstonAreas = {
     .hero-title {
       font-size: 3rem;
     }
+    
+    /* Hide smaller geometric shapes on mobile */
+    .triangle-2,
+    .small-circle {
+      display: none;
+    }
+    
+    /* Adjust remaining shapes for mobile */
+    .hero::before {
+      width: 200px;
+      height: 200px;
+      top: -100px;
+      right: -100px;
+    }
+    
+    .triangle-1 {
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 35px solid rgba(249, 87, 56, 0.06);
+    }
+  }
     
     .hero-stats {
       flex-direction: column;
