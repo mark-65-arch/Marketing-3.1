@@ -11,7 +11,7 @@ const { title, description, features, targetKeywords } = Astro.props;
 
 <div class="service-card">
   <h3 class="service-title">{title}</h3>
-  <p class="service-description">{description}</p>
+  <p class="service-description" set:html={description}></p>
   <ul class="service-features">
     {features.map(feature => (
       <li>{feature}</li>

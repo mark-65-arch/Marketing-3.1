@@ -27,7 +27,7 @@ const { title, industries } = Astro.props;
             {industry.icon}
           </div>
           <h3 class="industry-name">{industry.name}</h3>
-          <p class="industry-description">{industry.description}</p>
+          <p class="industry-description" set:html={industry.description}></p>
           <div class="industry-keywords">
             {industry.keywords.map(keyword => (
               <span class="keyword-tag">{keyword}</span>
