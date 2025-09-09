@@ -33,13 +33,13 @@ args = "Astro Dev Server"
 name = "Astro Dev Server"
 author = "agent"
 
-[workflows.workflow.metadata]
-outputType = "webview"
-
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd teal-tower && ASTRO_TELEMETRY_DISABLED=1 npm run dev"
+args = "cd teal-tower && npm run dev"
 waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
 
 [[ports]]
 localPort = 5000
