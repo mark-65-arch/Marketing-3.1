@@ -1,16 +1,555 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import IndustrySection from '../components/IndustrySection.astro';
 
+const services = [
+  {
+    title: "Website Building",
+    description: "Professional, fast-loading websites designed to convert visitors into customers for Houston businesses.",
+    icon: "🌐",
+    features: [
+      "Mobile-responsive design",
+      "Fast loading speeds",
+      "SEO-optimized structure",
+      "Conversion-focused layout",
+      "Local business integration"
+    ]
+  },
+  {
+    title: "SEO Optimization",
+    description: "Data-driven SEO strategies to help your Houston business rank higher and attract more local customers.",
+    icon: "📈",
+    features: [
+      "Local Houston SEO",
+      "Keyword research & strategy",
+      "Technical SEO audits",
+      "Content optimization",
+      "Performance tracking"
+    ]
+  },
+  {
+    title: "Business Profile Optimization",
+    description: "Optimize your Google Business Profile and other listings to dominate local search results in Houston.",
+    icon: "📍",
+    features: [
+      "Google Business Profile setup",
+      "Review management",
+      "Local citation building",
+      "Photo optimization",
+      "Local listing management"
+    ]
+  },
+  {
+    title: "AI Search Optimization",
+    description: "Future-proof your business for AI-powered search engines and voice search technologies.",
+    icon: "🤖",
+    features: [
+      "Google SGE optimization",
+      "Voice search optimization",
+      "Schema markup implementation",
+      "Featured snippet targeting",
+      "Zero-click result optimization"
+    ]
+  }
+];
+
+const industries = [
+  {
+    name: "Contractors & Home Services",
+    description: "Help Houston contractors get found by homeowners searching for reliable, local services. From plumbing to roofing, we understand your industry.",
+    keywords: ["Houston contractor SEO", "home services marketing", "local contractor leads"],
+    icon: "🔨"
+  },
+  {
+    name: "Medical Practices",
+    description: "Attract new patients in Houston with medical-focused digital marketing that builds trust and showcases your expertise.",
+    keywords: ["medical SEO Houston", "dentist marketing", "healthcare digital marketing"],
+    icon: "🏥"
+  },
+  {
+    name: "Real Estate Professionals",
+    description: "Stand out in Houston's competitive real estate market with websites and SEO that generate quality leads.",
+    keywords: ["realtor website design", "real estate SEO", "Houston property marketing"],
+    icon: "🏠"
+  },
+  {
+    name: "Legal Services",
+    description: "Build your law firm's online presence and attract clients searching for legal services in Houston.",
+    keywords: ["law firm SEO Houston", "attorney marketing", "legal website design"],
+    icon: "⚖️"
+  },
+  {
+    name: "Restaurants & Food Service",
+    description: "Drive more customers to your Houston restaurant with local SEO and online ordering optimization.",
+    keywords: ["restaurant marketing Houston", "food service SEO", "local dining promotion"],
+    icon: "🍽️"
+  }
+];
+
+const houstonAreas = [
+  "The Heights", "Montrose", "Downtown Houston", "Sugar Land", 
+  "Katy", "Cypress", "Bellaire", "Memorial", "Galleria", "River Oaks"
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout 
+  title="Houston SEO Company | Digital Marketing for Small Business | Marketing Now Houston"
+  description="Hire Houston SEO company for small business growth. Website design, business profile optimization, and AI SEO services for Houston businesses. Get more leads today!"
+  keywords="hire Houston SEO company for small business, Houston business profile optimization service, AI SEO services for Houston businesses, Houston website redesign experts, get more leads website SEO Houston"
+>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Digital Marketing That Delivers Results for 
+          <span class="text-primary">Houston Small Businesses</span>
+        </h1>
+        <p class="hero-subtitle">
+          Transparent, data-driven marketing strategies that help Houston businesses grow. 
+          No false promises, just measurable results through proven SEO, website design, 
+          and business profile optimization.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Houston Businesses Served</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">85%</div>
+            <div class="stat-label">Average Traffic Increase</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support for Houston Clients</div>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="/contact" class="btn-primary">Get Your Free SEO Audit</a>
+          <a href="tel:(713)555-0123" class="btn-secondary">Call (713) 555-0123</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Houston Digital Marketing Services</h2>
+        <p class="section-subtitle">
+          Comprehensive digital marketing solutions designed specifically for Houston small businesses. 
+          Each service is built to deliver measurable results and grow your local presence.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        {services.map(service => (
+          <ServiceCard {...service} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Focus -->
+  <IndustrySection 
+    title="Industries We Serve in Houston"
+    industries={industries}
+  />
+
+  <!-- Houston Areas -->
+  <section class="houston-areas">
+    <div class="container">
+      <h2 class="section-title">Serving All of Greater Houston</h2>
+      <p class="section-subtitle">
+        From downtown Houston to the suburbs, we help businesses across the greater Houston area 
+        dominate their local search results and attract more customers.
+      </p>
+      
+      <div class="areas-grid">
+        {houstonAreas.map(area => (
+          <div class="area-card">
+            <h3>{area}</h3>
+            <p>Local SEO & Digital Marketing</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process">
+    <div class="container">
+      <h2 class="section-title">Our Process-Driven Approach</h2>
+      <p class="section-subtitle">
+        Transparency and measurable results are at the core of everything we do. 
+        Here's how we help Houston businesses succeed online.
+      </p>
+      
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Discovery & Audit</h3>
+          <p>We analyze your current online presence, competitors, and target market in Houston to identify opportunities.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Strategy Development</h3>
+          <p>Create a customized digital marketing strategy tailored to your business goals and Houston market conditions.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Implementation</h3>
+          <p>Execute the strategy with regular updates and transparent reporting on progress and results.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Optimization & Growth</h3>
+          <p>Continuously refine and improve your campaigns based on data and market changes to maximize ROI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Signals -->
+  <section class="trust-signals">
+    <div class="container">
+      <h2 class="section-title">Why Houston Businesses Choose Marketing Now Houston</h2>
+      
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">🏢</div>
+          <h3>Local Houston Expertise</h3>
+          <p>Born and raised in Houston, we understand the local market, competition, and what it takes to succeed in H-Town.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">📊</div>
+          <h3>Transparent Reporting</h3>
+          <p>Monthly reports with clear metrics, progress updates, and actionable insights. No confusing jargon or hidden fees.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🎯</div>
+          <h3>Small Business Focused</h3>
+          <p>We specialize in helping small and medium Houston businesses compete with larger competitors through smart digital marketing.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">⚡</div>
+          <h3>Proven Results</h3>
+          <p>Data-driven strategies that deliver measurable improvements in traffic, leads, and revenue for Houston businesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Grow Your Houston Business?</h2>
+        <p class="cta-subtitle">
+          Get a free SEO audit and discover how we can help your business attract more customers 
+          and dominate local search results in Houston.
+        </p>
+        <div class="cta-buttons">
+          <a href="/contact" class="btn-primary large">Get Your Free SEO Audit</a>
+          <div class="cta-phone">
+            <span>Or call us directly:</span>
+            <a href="tel:(713)555-0123" class="phone-link">(713) 555-0123</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    color: white;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .text-primary {
+    color: #fbbf24;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+  }
+  
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fbbf24;
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+    opacity: 0.8;
+  }
+  
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 4rem 0;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Houston Areas */
+  .houston-areas {
+    padding: 4rem 0;
+    background: #f9fafb;
+  }
+  
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .area-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .area-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .area-card h3 {
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .area-card p {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  /* Process Section */
+  .process {
+    padding: 4rem 0;
+  }
+  
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .step {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .step-number {
+    background: #2563eb;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+  }
+  
+  .step h3 {
+    color: #1f2937;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .step p {
+    color: #6b7280;
+  }
+  
+  /* Trust Signals */
+  .trust-signals {
+    padding: 4rem 0;
+    background: #f9fafb;
+  }
+  
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .trust-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .trust-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .trust-item h3 {
+    color: #1f2937;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .trust-item p {
+    color: #6b7280;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background: #1f2937;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .btn-primary.large {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+  
+  .cta-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .phone-link {
+    color: #fbbf24;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .hero-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .cta-title {
+      font-size: 2rem;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+      grid-template-columns: 1fr;
+    }
+    
+    .trust-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
