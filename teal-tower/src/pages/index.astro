@@ -249,10 +249,23 @@ const houstonAreas = [
 <style>
   /* Hero Section */
   .hero {
-    background: var(--white);
+    background: linear-gradient(135deg, #FEFCF3 0%, #F8F6F1 50%, #F5F2EA 100%);
     color: var(--text-primary);
     padding: 8rem 0 6rem;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(232, 90, 0, 0.03) 0%, rgba(255, 87, 34, 0.02) 100%);
+    pointer-events: none;
   }
   
   .hero-title {
@@ -297,14 +310,16 @@ const houstonAreas = [
     transition: var(--transition);
     border: none;
     cursor: pointer;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-button);
     text-transform: uppercase;
+    position: relative;
+    z-index: 1;
   }
   
   .btn-primary-hero:hover {
     background: linear-gradient(135deg, var(--accent-coral), var(--primary-orange));
     transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--shadow-button-hover);
   }
   
   /* Services Section */
