@@ -1,0 +1,133 @@
+---
+export interface Props {
+  title: string;
+  industries: {
+    name: string;
+    description: string;
+    keywords: string[];
+    icon: string;
+  }[];
+}
+
+const { title, industries } = Astro.props;
+---
+
+<section class="industry-section">
+  <div class="container">
+    <h2 class="section-title">{title}</h2>
+    <p class="section-subtitle">
+      We understand the unique challenges and opportunities in your industry. 
+      Our Houston-focused digital marketing strategies are tailored to help your business thrive locally.
+    </p>
+    
+    <div class="industry-grid">
+      {industries.map(industry => (
+        <div class="industry-card">
+          <div class="industry-icon">
+            {industry.icon}
+          </div>
+          <h3 class="industry-name">{industry.name}</h3>
+          <p class="industry-description">{industry.description}</p>
+          <div class="industry-keywords">
+            {industry.keywords.map(keyword => (
+              <span class="keyword-tag">{keyword}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .industry-section {
+    padding: 4rem 0;
+    background: #f9fafb;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #6b7280;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+  }
+  
+  .industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .industry-card {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+  }
+  
+  .industry-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .industry-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .industry-name {
+    color: #1f2937;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .industry-description {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .industry-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .keyword-tag {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .industry-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
