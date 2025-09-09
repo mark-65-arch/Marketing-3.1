@@ -28,7 +28,7 @@ const { title, description, features, targetKeywords } = Astro.props;
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     border-radius: 12px;
   }
   
@@ -49,18 +49,12 @@ const { title, description, features, targetKeywords } = Astro.props;
     margin-bottom: 2rem;
     font-size: 1.1rem;
     line-height: 1.6;
-    max-width: 350px;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   .service-features {
     list-style: none;
     margin-bottom: 2.5rem;
     text-align: left;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   .service-features li {
@@ -92,6 +86,7 @@ const { title, description, features, targetKeywords } = Astro.props;
     margin-top: auto;
     box-shadow: var(--shadow-button);
     display: inline-block;
+    align-self: flex-start;
   }
   
   .service-cta:hover {
