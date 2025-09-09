@@ -130,7 +130,7 @@ const houstonAreas = [
       </div>
       
       <div class="services-cta">
-        <a href="/contact" class="btn-primary large">GET STARTED</a>
+        <a href="/contact" class="btn-primary-hero">GET STARTED</a>
       </div>
     </div>
   </section>
@@ -350,7 +350,7 @@ const houstonAreas = [
   .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3rem;
+    gap: 2rem;
     max-width: 1400px;
     margin: 0 auto;
     justify-items: center;
@@ -358,7 +358,32 @@ const houstonAreas = [
   
   .services-cta {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
+  }
+  
+  .services-cta .btn-primary-hero {
+    background: linear-gradient(135deg, var(--button-orange), var(--accent-terracotta));
+    color: white;
+    padding: 1.25rem 2.5rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow-button);
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .services-cta .btn-primary-hero:hover {
+    background: linear-gradient(135deg, var(--accent-coral), var(--button-orange));
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-button-hover);
   }
   
   /* Houston Areas */
