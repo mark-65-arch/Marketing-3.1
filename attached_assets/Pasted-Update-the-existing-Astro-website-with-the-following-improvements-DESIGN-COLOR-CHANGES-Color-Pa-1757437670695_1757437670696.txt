@@ -1,0 +1,70 @@
+Update the existing Astro website with the following improvements:
+DESIGN & COLOR CHANGES:
+
+Color Palette: Switch to warm pastel colors with orange accents:
+
+Primary background: Warm cream (#FEFCF3)
+Secondary background: Soft warm gray (#F8F6F1)
+Text: Charcoal gray (#2D3748)
+Primary buttons: Warm orange (#FF8A4C)
+Secondary buttons: Soft peach (#FFAB91)
+Accent colors: Coral (#FF7675) and warm terracotta (#E17055)
+Links: Deep orange (#E67E22)
+
+
+Layout Improvements:
+
+Fix all alignment issues with proper CSS Grid and Flexbox
+Add consistent spacing between sections (80px padding)
+Center all content properly within max-width containers
+Improve mobile responsiveness with better breakpoints
+Add subtle shadows and rounded corners for modern look
+
+
+Typography:
+
+Use warm, readable fonts
+Improve heading hierarchy
+Add proper line spacing and contrast
+
+
+
+CONTENT CORRECTIONS:
+Remove these unrealistic claims that contradict our "no overpromising" approach:
+
+Remove "100+ Houston Businesses Served"
+Remove "85% Average Traffic Increase"
+Remove specific statistics that sound like guarantees
+
+REPLACE WITH:
+
+"New Houston Agency with Fresh Perspective"
+"Data-Driven Approach, Not Empty Promises"
+"Transparent Process You Can Trust"
+
+HERO SECTION IMPROVEMENTS:
+Update the hero to:
+"Honest Digital Marketing for Houston Small Businesses
+We're a new agency focused on building trust through transparent processes and measurable results. No inflated claims, just solid marketing strategies that work."
+CONTACT INFO:
+
+Use placeholder phone: "Contact us for consultation"
+Email: "hello@marketingnowhouston.com"
+Remove specific address, use "Serving Greater Houston Area"
+
+VISUAL IMPROVEMENTS:
+
+Add proper section spacing and alignment
+Create consistent card layouts with subtle shadows
+Improve button styling with orange gradient effects
+Add hover animations and smooth transitions
+Ensure mobile menu works perfectly
+Fix any overlapping or misaligned elements
+
+PERFORMANCE:
+
+Optimize all CSS for faster loading
+Ensure 100/100 Lighthouse score compatibility
+Clean up any redundant code
+
+Make sure the overall design feels warm, professional, and trustworthy while maintaining the orange emphasis elements as requested.
