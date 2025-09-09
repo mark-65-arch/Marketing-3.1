@@ -8,9 +8,10 @@ export default defineConfig({
     port: 5000,
     allowedHosts: [
       'localhost',
-      '38fc77b5-fe78-4794-a88a-96c5f8e7b4d7-00-1nulpgvxu7e6s.spock.replit.dev',
+      process.env.REPLIT_DEV_DOMAIN || '',
       '.replit.dev',
-      '.spock.replit.dev'
-    ]
+      '.spock.replit.dev',
+      '.janeway.replit.dev'
+    ].filter(Boolean)
   }
 });
