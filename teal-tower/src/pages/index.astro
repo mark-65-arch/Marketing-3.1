@@ -285,6 +285,36 @@ const houstonAreas = {
     </div>
   </section>
 
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Do you require long-term contracts?</h3>
+          <p>No. We work month-to-month because we believe in earning your business through results, not locking you into lengthy agreements.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do you use AI in your marketing?</h3>
+          <p>We use AI tools for competitor analysis, keyword research, content optimization, and campaign monitoring to deliver faster, more accurate results than traditional methods.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What makes you different from other Houston agencies?</h3>
+          <p>Fresh perspective without the bureaucracy. You get direct access to decision makers, cutting-edge AI tools, competitive pricing, and personal attention your business deserves.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's included in the free SEO audit?</h3>
+          <p>Comprehensive analysis of your website's performance, competitor comparison, keyword opportunities, technical issues, and a clear action plan for improvement.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How quickly can you get started?</h3>
+          <p>Most projects begin within 1-2 weeks. As a new agency, we have immediate availability and can move fast when you're ready to grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
@@ -755,6 +785,52 @@ const houstonAreas = {
     line-height: 1.6;
   }
   
+  /* FAQ Section */
+  .faq-section {
+    padding: 5rem 0;
+    background: #FAFAFA;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .faq-item {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+    box-shadow: var(--shadow);
+  }
+  
+  .faq-item:hover {
+    background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(255, 255, 255, 0.95));
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(249, 87, 56, 0.15);
+    border: 1px solid rgba(249, 87, 56, 0.2);
+  }
+  
+  .faq-item h3 {
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  .faq-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+  }
+
   /* CTA Section */
   .cta-section {
     background: var(--text-primary);
@@ -854,6 +930,19 @@ const houstonAreas = {
     
     .trust-grid {
       grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .faq-item {
+      padding: 1.5rem;
+    }
+    
+    .faq-item h3 {
+      font-size: 1rem;
     }
   }
 </style>
