@@ -23,16 +23,20 @@ const { title, description, features, targetKeywords } = Astro.props;
   .service-card {
     background: transparent;
     padding: 1.5rem 1.5rem;
-    transition: transform 0.3s ease;
+    transition: all 0.4s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: left;
     border-radius: 12px;
+    border: 1px solid transparent;
   }
   
   .service-card:hover {
-    transform: translateY(-5px);
+    background: white;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(249, 87, 56, 0.1);
   }
   
   .service-title {

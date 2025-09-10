@@ -523,12 +523,11 @@ const houstonAreas = {
   }
   
   .region-section {
-    background: var(--white);
+    background: transparent;
     padding: 2rem;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    border: 1px solid rgba(249, 87, 56, 0.1);
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
   }
@@ -546,9 +545,10 @@ const houstonAreas = {
   }
   
   .region-section:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
-    border-color: rgba(249, 87, 56, 0.2);
+    background: var(--white);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(249, 87, 56, 0.1);
   }
   
   .region-section:hover::before {
@@ -648,17 +648,19 @@ const houstonAreas = {
   }
   
   .trust-item {
-    background: var(--white);
+    background: transparent;
     padding: 2.5rem;
     border-radius: var(--border-radius);
     text-align: center;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
   }
   
   .trust-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
+    background: var(--white);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(249, 87, 56, 0.1);
   }
   
   .trust-icon {
