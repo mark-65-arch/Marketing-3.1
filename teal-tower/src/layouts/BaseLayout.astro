@@ -144,7 +144,7 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
     .logo {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.4rem;
       text-decoration: none;
       transition: var(--transition);
     }
@@ -550,57 +550,24 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
   <nav class="nav-container">
     <div class="nav-wrapper">
       <a href="/" class="logo">
-        <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <!-- Light bulb outline -->
-          <path d="M100 30c-20 0-36 16-36 36 0 12 6 22 14 29 4 3 7 8 7 13v8c0 3 2 5 5 5h20c3 0 5-2 5-5v-8c0-5 3-10 7-13 8-7 14-17 14-29 0-20-16-36-36-36z" 
-                fill="#F95738" 
-                stroke="none"/>
-          
-          <!-- Light bulb base/screw threads -->
-          <rect x="88" y="121" width="24" height="4" fill="#F95738" rx="2"/>
-          <rect x="88" y="127" width="24" height="4" fill="#F95738" rx="2"/>
-          <rect x="88" y="133" width="24" height="4" fill="#F95738" rx="2"/>
-          <rect x="88" y="139" width="24" height="6" fill="#F95738" rx="3"/>
-          
-          <!-- Circuit patterns inside light bulb -->
-          <!-- Central trunk/stem -->
-          <line x1="100" y1="105" x2="100" y2="85" stroke="white" stroke-width="3"/>
-          
-          <!-- Main circuit branches -->
-          <line x1="100" y1="85" x2="85" y2="70" stroke="white" stroke-width="2"/>
-          <line x1="100" y1="85" x2="115" y2="70" stroke="white" stroke-width="2"/>
-          <line x1="100" y1="85" x2="90" y2="95" stroke="white" stroke-width="2"/>
-          <line x1="100" y1="85" x2="110" y2="95" stroke="white" stroke-width="2"/>
-          
-          <!-- Secondary branches -->
-          <line x1="85" y1="70" x2="75" y2="60" stroke="white" stroke-width="1.5"/>
-          <line x1="85" y1="70" x2="80" y2="80" stroke="white" stroke-width="1.5"/>
-          <line x1="115" y1="70" x2="125" y2="60" stroke="white" stroke-width="1.5"/>
-          <line x1="115" y1="70" x2="120" y2="80" stroke="white" stroke-width="1.5"/>
-          
-          <!-- Tertiary branches for detail -->
-          <line x1="75" y1="60" x2="70" y2="55" stroke="white" stroke-width="1"/>
-          <line x1="75" y1="60" x2="72" y2="65" stroke="white" stroke-width="1"/>
-          <line x1="125" y1="60" x2="130" y2="55" stroke="white" stroke-width="1"/>
-          <line x1="125" y1="60" x2="128" y2="65" stroke="white" stroke-width="1"/>
-          
-          <!-- Small end nodes -->
-          <circle cx="70" cy="55" r="2" fill="white"/>
-          <circle cx="72" cy="65" r="2" fill="white"/>
-          <circle cx="130" cy="55" r="2" fill="white"/>
-          <circle cx="128" cy="65" r="2" fill="white"/>
-          <circle cx="80" cy="80" r="2" fill="white"/>
-          <circle cx="120" cy="80" r="2" fill="white"/>
-          
-          <!-- Curved arrow around the bulb -->
-          <path d="M145 75 A 50 50 0 0 1 135 125" 
+          <path d="M50 10c-15 0-27 12-27 27 0 8 4 15 9 20 3 3 5 7 5 11v5h26v-5c0-4 2-8 5-11 5-5 9-12 9-20 0-15-12-27-27-27z" 
                 fill="none" 
                 stroke="#F95738" 
                 stroke-width="3" 
-                stroke-linecap="round"/>
+                stroke-linecap="round" 
+                stroke-linejoin="round"/>
           
-          <!-- Arrow head -->
-          <polygon points="135,125 140,120 140,130" fill="#F95738"/>
+          <!-- Simple Y filament -->
+          <line x1="50" y1="60" x2="50" y2="45" stroke="#F95738" stroke-width="3" stroke-linecap="round"/>
+          <line x1="50" y1="45" x2="42" y2="35" stroke="#F95738" stroke-width="3" stroke-linecap="round"/>
+          <line x1="50" y1="45" x2="58" y2="35" stroke="#F95738" stroke-width="3" stroke-linecap="round"/>
+          
+          <!-- Light bulb base -->
+          <rect x="37" y="73" width="26" height="8" fill="#F95738" rx="2"/>
+          <line x1="37" y="77" x2="63" y2="77" stroke="white" stroke-width="1"/>
+          <line x1="37" y="79" x2="63" y2="79" stroke="white" stroke-width="1"/>
         </svg>
         
         <div class="logo-text">
