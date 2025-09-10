@@ -105,7 +105,7 @@ const houstonAreas = {
           Next-Generation Marketing <span style="color: #F95738;">Without the Hype</span>
         </h1>
         <p class="hero-subtitle">
-          Fresh strategies powered by modern tools and AI analysis, delivered with personal service and transparent reporting.
+          Modern AI-powered strategies without the agency bureaucracy, long contracts, or outdated tactics. Fresh perspective, personal attention.
         </p>
         <div class="hero-cta">
           <a href="/contact" class="btn-primary-hero">GET YOUR <span style="color: white; font-weight: 800;">FREE</span> SEO AUDIT</a>
@@ -139,6 +139,34 @@ const houstonAreas = {
       
       <div class="services-cta">
         <a href="/contact" class="btn-primary-hero">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Over Traditional Agencies -->
+  <section class="competitive-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Smart Houston Businesses Are Choosing Us Over Traditional Agencies</h2>
+      </div>
+      
+      <div class="competitive-grid">
+        <div class="competitive-item">
+          <h3><span style='color: #F95738;'>No Long-Term Contracts</span></h3>
+          <p>Work with us month-to-month. We earn your business through results, not paperwork.</p>
+        </div>
+        <div class="competitive-item">
+          <h3><span style='color: #F95738;'>Direct Access to Decision Makers</span></h3>
+          <p>Skip the account manager runaround. You work directly with the people doing the work.</p>
+        </div>
+        <div class="competitive-item">
+          <h3><span style='color: #F95738;'>Latest AI-Powered Tools</span></h3>
+          <p>We use cutting-edge technology that bigger agencies are still trying to figure out.</p>
+        </div>
+        <div class="competitive-item">
+          <h3><span style='color: #F95738;'>Competitive Pricing</span></h3>
+          <p>New agency means lower overhead and better value for Houston businesses ready to grow.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -188,17 +216,17 @@ const houstonAreas = {
         <div class="step">
           <div class="step-number">1</div>
           <h3>Discovery & Audit</h3>
-          <p>We analyze your current online presence, competitors, and target market in Houston to identify <span style='color: #F95738;'>opportunities</span>.</p>
+          <p>We dive deep into your current online presence, competitors, and target market in Houston to identify <span style='color: #F95738;'>opportunities</span>.</p>
         </div>
         <div class="step">
           <div class="step-number">2</div>
           <h3>Strategy Development</h3>
-          <p>Create a <span style='color: #F95738;'>customized</span> digital marketing strategy tailored to your business goals and Houston market conditions.</p>
+          <p>We create a <span style='color: #F95738;'>customized</span> digital marketing strategy that actually fits your business and Houston market conditions.</p>
         </div>
         <div class="step">
           <div class="step-number">3</div>
           <h3>Implementation</h3>
-          <p>Execute the strategy with regular updates and <span style='color: #F95738;'>transparent</span> reporting on progress and results.</p>
+          <p>We execute the strategy and keep you in the loop every step of the way with <span style='color: #F95738;'>transparent</span> reporting on progress and results.</p>
         </div>
         <div class="step">
           <div class="step-number">4</div>
@@ -222,7 +250,7 @@ const houstonAreas = {
             </svg>
           </div>
           <h3><span style='color: black;'>Houston Market Expertise</span></h3>
-          <p>Deep Houston market expertise - we understand the Houston market, competition, and what it takes to succeed in H-Town.</p>
+          <p>Fresh Houston perspective - we understand the market without the jaded 'that's how we've always done it' mentality.</p>
         </div>
         <div class="trust-item">
           <div class="trust-icon">
@@ -242,7 +270,7 @@ const houstonAreas = {
             </svg>
           </div>
           <h3>Small Business Focused</h3>
-          <p>We specialize in helping small and medium Houston businesses compete with larger competitors through smart digital marketing. New agency, fresh strategies.</p>
+          <p>Built for small business - no minimum spends, no treating you like you're not important enough. You get our full attention.</p>
         </div>
         <div class="trust-item">
           <div class="trust-icon">
@@ -639,6 +667,48 @@ const houstonAreas = {
     line-height: 1.6;
   }
   
+  /* Competitive Section */
+  .competitive-section {
+    padding: 5rem 0;
+    background: #F9FBF2;
+  }
+  
+  .competitive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .competitive-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+    box-shadow: var(--shadow);
+  }
+  
+  .competitive-item:hover {
+    background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(255, 255, 255, 0.95));
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(249, 87, 56, 0.15);
+    border: 1px solid rgba(249, 87, 56, 0.2);
+  }
+  
+  .competitive-item h3 {
+    color: var(--text-primary);
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .competitive-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
   /* Trust Signals */
   .trust-signals {
     padding: 5rem 0;
