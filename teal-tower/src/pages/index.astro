@@ -654,14 +654,7 @@ const houstonAreas = {
     min-width: 280px;
   }
   
-  /* Force last two items to specific positions for 3+2 layout */
-  .areas-grid > .region-section:nth-of-type(4) {
-    margin-right: auto;
-  }
-  
-  .areas-grid > .region-section:nth-of-type(5) {
-    margin-left: auto;
-  }
+  /* Bottom row cards will naturally center as a pair under justify-content: center */
   
   .region-section:hover {
     background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(255, 255, 255, 0.95));
@@ -714,11 +707,15 @@ const houstonAreas = {
   }
   
   .area-item::before {
-    content: "📍";
+    content: "";
     position: absolute;
     left: 0;
-    top: 0.5rem;
-    font-size: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: #F95738;
+    border-radius: 50%;
   }
   
   /* Process Section */
