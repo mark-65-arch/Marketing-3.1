@@ -10,6 +10,9 @@ The website emphasizes credibility, transparency, and measurable results while t
 
 Preferred communication style: Simple, everyday language.
 
+**Design Standards:**
+- Default orange color: `#F95738` - Always use this exact color when "orange" is mentioned to maintain brand consistency throughout the site
+
 ## Recent Changes
 
 **September 9, 2025**: Successfully imported and configured for Replit environment
