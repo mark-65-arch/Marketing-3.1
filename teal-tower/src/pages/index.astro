@@ -481,6 +481,11 @@ const houstonAreas = {
       gap: 2rem;
     }
     
+    .competitive-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
     .section-title {
       font-size: 2.5rem;
       max-width: 95%;
@@ -724,9 +729,12 @@ const houstonAreas = {
   
   .process-steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
     margin-top: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .step {
@@ -772,9 +780,12 @@ const houstonAreas = {
   
   .competitive-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
     margin-top: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .competitive-item {

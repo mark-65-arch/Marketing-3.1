@@ -69,8 +69,17 @@ const { title, industries } = Astro.props;
   
   .industry-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Center the 5th item (odd item) when there are 5 total */
+  .industry-grid .industry-card:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
   }
   
   .industry-card {
@@ -131,6 +140,12 @@ const { title, industries } = Astro.props;
     
     .industry-grid {
       grid-template-columns: 1fr;
+    }
+    
+    /* Reset 5th card styling on mobile */
+    .industry-grid .industry-card:nth-child(5) {
+      grid-column: auto;
+      max-width: 100%;
     }
   }
 </style>
