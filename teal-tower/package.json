@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@replit/vite-plugin-cartographer": "^0.3.0",
     "astro": "^5.13.7"
   },
   "devDependencies": {
