@@ -23,8 +23,7 @@ const { title, industries } = Astro.props;
     <div class="industry-grid">
       {industries.map(industry => (
         <div class="industry-card">
-          <div class="industry-icon">
-            {industry.icon}
+          <div class="industry-icon" set:html={industry.icon}>
           </div>
           <h3 class="industry-name">{industry.name}</h3>
           <p class="industry-description" set:html={industry.description}></p>
@@ -101,6 +100,15 @@ const { title, industries } = Astro.props;
   .industry-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .industry-icon svg {
+    width: 48px;
+    height: 48px;
+    display: block;
   }
   
   .industry-name {
