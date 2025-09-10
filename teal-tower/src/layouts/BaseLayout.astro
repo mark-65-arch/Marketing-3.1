@@ -142,16 +142,41 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
     }
     
     .logo {
-      font-weight: 700;
-      font-size: 1.6rem;
-      color: var(--primary-orange);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
       text-decoration: none;
       transition: var(--transition);
     }
     
     .logo:hover {
-      color: var(--accent-terracotta);
       transform: scale(1.05);
+    }
+    
+    .logo-svg {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+    
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+    
+    .logo-marketing {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      letter-spacing: 0.5px;
+    }
+    
+    .logo-ai-houston {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary-orange);
+      letter-spacing: 0.5px;
     }
     
     .nav-menu {
@@ -512,7 +537,60 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
 <body>
   <nav class="nav-container">
     <div class="nav-wrapper">
-      <a href="/" class="logo">Marketing AI Houston</a>
+      <a href="/" class="logo">
+        <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Brain outline -->
+          <path d="M100 20c-25 0-45 15-50 35-3-2-7-3-11-3-12 0-22 10-22 22 0 8 4 15 10 19-2 6-3 12-3 19 0 15 6 28 15 37 8 8 18 13 29 15 3 8 9 15 17 19 12 6 26 6 38 0 8-4 14-11 17-19 11-2 21-7 29-15 9-9 15-22 15-37 0-7-1-13-3-19 6-4 10-11 10-19 0-12-10-22-22-22-4 0-8 1-11 3-5-20-25-35-50-35z" 
+                fill="none" 
+                stroke="#F95738" 
+                stroke-width="3"/>
+          
+          <!-- Circuit patterns inside brain -->
+          <!-- Central processing unit -->
+          <circle cx="100" cy="90" r="8" fill="#F95738"/>
+          
+          <!-- Circuit lines and nodes -->
+          <line x1="100" y1="90" x2="130" y2="75" stroke="#F95738" stroke-width="2"/>
+          <line x1="100" y1="90" x2="70" y2="75" stroke="#F95738" stroke-width="2"/>
+          <line x1="100" y1="90" x2="85" y2="110" stroke="#F95738" stroke-width="2"/>
+          <line x1="100" y1="90" x2="115" y2="110" stroke="#F95738" stroke-width="2"/>
+          <line x1="100" y1="90" x2="100" y2="60" stroke="#F95738" stroke-width="2"/>
+          
+          <!-- Circuit nodes -->
+          <circle cx="130" cy="75" r="4" fill="#F95738"/>
+          <circle cx="70" cy="75" r="4" fill="#F95738"/>
+          <circle cx="85" cy="110" r="4" fill="#F95738"/>
+          <circle cx="115" cy="110" r="4" fill="#F95738"/>
+          <circle cx="100" cy="60" r="4" fill="#F95738"/>
+          
+          <!-- Additional circuit connections -->
+          <line x1="130" y1="75" x2="145" y2="90" stroke="#F95738" stroke-width="1.5"/>
+          <line x1="70" y1="75" x2="55" y2="90" stroke="#F95738" stroke-width="1.5"/>
+          <line x1="85" y1="110" x2="75" y2="125" stroke="#F95738" stroke-width="1.5"/>
+          <line x1="115" y1="110" x2="125" y2="125" stroke="#F95738" stroke-width="1.5"/>
+          <line x1="100" y1="60" x2="115" y2="45" stroke="#F95738" stroke-width="1.5"/>
+          <line x1="100" y1="60" x2="85" y2="45" stroke="#F95738" stroke-width="1.5"/>
+          
+          <!-- End nodes -->
+          <circle cx="145" cy="90" r="3" fill="#F95738"/>
+          <circle cx="55" cy="90" r="3" fill="#F95738"/>
+          <circle cx="75" cy="125" r="3" fill="#F95738"/>
+          <circle cx="125" cy="125" r="3" fill="#F95738"/>
+          <circle cx="115" cy="45" r="3" fill="#F95738"/>
+          <circle cx="85" cy="45" r="3" fill="#F95738"/>
+          
+          <!-- Additional smaller connections for detail -->
+          <line x1="70" y1="75" x2="85" y2="65" stroke="#F95738" stroke-width="1"/>
+          <line x1="130" y1="75" x2="115" y2="65" stroke="#F95738" stroke-width="1"/>
+          <circle cx="85" cy="65" r="2" fill="#F95738"/>
+          <circle cx="115" cy="65" r="2" fill="#F95738"/>
+        </svg>
+        
+        <div class="logo-text">
+          <span class="logo-marketing">MARKETING</span>
+          <span class="logo-ai-houston">AI HOUSTON</span>
+        </div>
+      </a>
       
       <ul class="nav-menu">
         <li><a href="/" class="nav-link">Home</a></li>
