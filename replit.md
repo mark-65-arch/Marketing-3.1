@@ -1,8 +1,8 @@
-# Marketing Now Houston - Astro Website
+# Marketing AI Houston - Astro Website
 
 ## Overview
 
-This is an Astro-based marketing website for "Marketing Now Houston," a digital marketing agency focused on serving small businesses in the Houston area. The project is designed to be a conversion-focused, SEO-optimized website that targets local Houston businesses across multiple industries including contractors, medical practices, real estate, legal services, and restaurants.
+This is an Astro-based marketing website for "Marketing AI Houston," a digital marketing agency focused on serving small businesses in the Houston area. The project is designed to be a conversion-focused, SEO-optimized website that targets local Houston businesses across multiple industries including contractors, medical practices, real estate, legal services, and restaurants.
 
 The website emphasizes credibility, transparency, and measurable results while targeting specific Houston neighborhoods and high-intent keywords related to digital marketing services. The primary goal is lead generation through strategic content placement and local SEO optimization.
 
