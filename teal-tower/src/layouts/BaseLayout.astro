@@ -539,51 +539,56 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
     <div class="nav-wrapper">
       <a href="/" class="logo">
         <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <!-- Brain outline -->
-          <path d="M100 20c-25 0-45 15-50 35-3-2-7-3-11-3-12 0-22 10-22 22 0 8 4 15 10 19-2 6-3 12-3 19 0 15 6 28 15 37 8 8 18 13 29 15 3 8 9 15 17 19 12 6 26 6 38 0 8-4 14-11 17-19 11-2 21-7 29-15 9-9 15-22 15-37 0-7-1-13-3-19 6-4 10-11 10-19 0-12-10-22-22-22-4 0-8 1-11 3-5-20-25-35-50-35z" 
+          <!-- Light bulb outline -->
+          <path d="M100 30c-20 0-36 16-36 36 0 12 6 22 14 29 4 3 7 8 7 13v8c0 3 2 5 5 5h20c3 0 5-2 5-5v-8c0-5 3-10 7-13 8-7 14-17 14-29 0-20-16-36-36-36z" 
+                fill="#F95738" 
+                stroke="none"/>
+          
+          <!-- Light bulb base/screw threads -->
+          <rect x="88" y="121" width="24" height="4" fill="#F95738" rx="2"/>
+          <rect x="88" y="127" width="24" height="4" fill="#F95738" rx="2"/>
+          <rect x="88" y="133" width="24" height="4" fill="#F95738" rx="2"/>
+          <rect x="88" y="139" width="24" height="6" fill="#F95738" rx="3"/>
+          
+          <!-- Circuit patterns inside light bulb -->
+          <!-- Central trunk/stem -->
+          <line x1="100" y1="105" x2="100" y2="85" stroke="white" stroke-width="3"/>
+          
+          <!-- Main circuit branches -->
+          <line x1="100" y1="85" x2="85" y2="70" stroke="white" stroke-width="2"/>
+          <line x1="100" y1="85" x2="115" y2="70" stroke="white" stroke-width="2"/>
+          <line x1="100" y1="85" x2="90" y2="95" stroke="white" stroke-width="2"/>
+          <line x1="100" y1="85" x2="110" y2="95" stroke="white" stroke-width="2"/>
+          
+          <!-- Secondary branches -->
+          <line x1="85" y1="70" x2="75" y2="60" stroke="white" stroke-width="1.5"/>
+          <line x1="85" y1="70" x2="80" y2="80" stroke="white" stroke-width="1.5"/>
+          <line x1="115" y1="70" x2="125" y2="60" stroke="white" stroke-width="1.5"/>
+          <line x1="115" y1="70" x2="120" y2="80" stroke="white" stroke-width="1.5"/>
+          
+          <!-- Tertiary branches for detail -->
+          <line x1="75" y1="60" x2="70" y2="55" stroke="white" stroke-width="1"/>
+          <line x1="75" y1="60" x2="72" y2="65" stroke="white" stroke-width="1"/>
+          <line x1="125" y1="60" x2="130" y2="55" stroke="white" stroke-width="1"/>
+          <line x1="125" y1="60" x2="128" y2="65" stroke="white" stroke-width="1"/>
+          
+          <!-- Small end nodes -->
+          <circle cx="70" cy="55" r="2" fill="white"/>
+          <circle cx="72" cy="65" r="2" fill="white"/>
+          <circle cx="130" cy="55" r="2" fill="white"/>
+          <circle cx="128" cy="65" r="2" fill="white"/>
+          <circle cx="80" cy="80" r="2" fill="white"/>
+          <circle cx="120" cy="80" r="2" fill="white"/>
+          
+          <!-- Curved arrow around the bulb -->
+          <path d="M145 75 A 50 50 0 0 1 135 125" 
                 fill="none" 
                 stroke="#F95738" 
-                stroke-width="3"/>
+                stroke-width="3" 
+                stroke-linecap="round"/>
           
-          <!-- Circuit patterns inside brain -->
-          <!-- Central processing unit -->
-          <circle cx="100" cy="90" r="8" fill="#F95738"/>
-          
-          <!-- Circuit lines and nodes -->
-          <line x1="100" y1="90" x2="130" y2="75" stroke="#F95738" stroke-width="2"/>
-          <line x1="100" y1="90" x2="70" y2="75" stroke="#F95738" stroke-width="2"/>
-          <line x1="100" y1="90" x2="85" y2="110" stroke="#F95738" stroke-width="2"/>
-          <line x1="100" y1="90" x2="115" y2="110" stroke="#F95738" stroke-width="2"/>
-          <line x1="100" y1="90" x2="100" y2="60" stroke="#F95738" stroke-width="2"/>
-          
-          <!-- Circuit nodes -->
-          <circle cx="130" cy="75" r="4" fill="#F95738"/>
-          <circle cx="70" cy="75" r="4" fill="#F95738"/>
-          <circle cx="85" cy="110" r="4" fill="#F95738"/>
-          <circle cx="115" cy="110" r="4" fill="#F95738"/>
-          <circle cx="100" cy="60" r="4" fill="#F95738"/>
-          
-          <!-- Additional circuit connections -->
-          <line x1="130" y1="75" x2="145" y2="90" stroke="#F95738" stroke-width="1.5"/>
-          <line x1="70" y1="75" x2="55" y2="90" stroke="#F95738" stroke-width="1.5"/>
-          <line x1="85" y1="110" x2="75" y2="125" stroke="#F95738" stroke-width="1.5"/>
-          <line x1="115" y1="110" x2="125" y2="125" stroke="#F95738" stroke-width="1.5"/>
-          <line x1="100" y1="60" x2="115" y2="45" stroke="#F95738" stroke-width="1.5"/>
-          <line x1="100" y1="60" x2="85" y2="45" stroke="#F95738" stroke-width="1.5"/>
-          
-          <!-- End nodes -->
-          <circle cx="145" cy="90" r="3" fill="#F95738"/>
-          <circle cx="55" cy="90" r="3" fill="#F95738"/>
-          <circle cx="75" cy="125" r="3" fill="#F95738"/>
-          <circle cx="125" cy="125" r="3" fill="#F95738"/>
-          <circle cx="115" cy="45" r="3" fill="#F95738"/>
-          <circle cx="85" cy="45" r="3" fill="#F95738"/>
-          
-          <!-- Additional smaller connections for detail -->
-          <line x1="70" y1="75" x2="85" y2="65" stroke="#F95738" stroke-width="1"/>
-          <line x1="130" y1="75" x2="115" y2="65" stroke="#F95738" stroke-width="1"/>
-          <circle cx="85" cy="65" r="2" fill="#F95738"/>
-          <circle cx="115" cy="65" r="2" fill="#F95738"/>
+          <!-- Arrow head -->
+          <polygon points="135,125 140,120 140,130" fill="#F95738"/>
         </svg>
         
         <div class="logo-text">
