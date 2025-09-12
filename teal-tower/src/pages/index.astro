@@ -927,12 +927,15 @@ const houstonAreas = {
       display: none;
     }
     
-    /* Adjust remaining shapes for mobile */
+    /* Maintain overlay on mobile */
     .hero::before {
-      width: 200px;
-      height: 200px;
-      top: -100px;
-      right: -100px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: auto;
+      background: rgba(249, 251, 242, 0.75);
     }
     
     .triangle-1 {
