@@ -13,9 +13,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div class="hero-container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1 class="hero-title">Google Business Profile<br><span class="hero-highlight">Optimization for Houston Businesses</span></h1>
+          <h1 class="hero-title">Get Found When Houston Customers<br><span class="hero-highlight">Search 'Near Me'</span></h1>
           <p class="hero-subtitle">
-            Get found when Houston customers search for contractors, auto repair, cleaning services, and pet care 'near me'. Professional setup and optimization that typically drives more phone calls within 30 days.
+            Google Business Profile optimization for Houston contractors, auto repair, cleaning services, and pet care businesses. Professional setup and optimization that typically drives more phone calls within 30 days.
           </p>
           <div class="hero-price">
             <span class="price-amount">$497</span>
@@ -122,7 +122,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <!-- Perfect For Section -->
   <section class="perfect-for" id="perfect-for">
     <div class="container">
-      <h2 class="section-title text-center">Perfect for These Houston Service Businesses</h2>
+      <h2 class="section-title text-center">Perfect for Houston Contractors, Auto Shops, and Service Businesses</h2>
       <p class="section-subtitle text-center">
         Industries that typically see the fastest results from Google Business Profile optimization
       </p>
@@ -163,7 +163,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <!-- FAQ Section -->
   <section class="faq">
     <div class="container">
-      <h2 class="section-title text-center">Voice Search Optimized Questions</h2>
+      <h2 class="section-title text-center">Common Questions About Google Business Profile Optimization in Houston</h2>
       
       <div class="faq-grid">
         <div class="faq-item">
@@ -174,21 +174,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="faq-item">
           <h3>How long does setup take?</h3>
           <p>Setup takes 5-7 business days after you provide photos and business information. You typically see improved search visibility within 2-4 weeks.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>Do I need professional photos?</h3>
-          <p>No professional photography required. We optimize and organize up to 15 existing photos you provide.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>What if I don't have a Google Business Profile yet?</h3>
-          <p>We'll create it from scratch using your business information. We'll handle the entire verification process with Google.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>Can you help get more Google reviews?</h3>
-          <p>We provide email templates, text scripts, and QR codes to make requesting reviews easy. Plus training on when and how to ask customers.</p>
         </div>
         
         <div class="faq-item">
@@ -218,6 +203,94 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
+
+  <!-- JSON-LD Schema Markup for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Marketing AI Houston",
+    "description": "Google Business Profile optimization and digital marketing services for Houston contractors, auto shops, cleaning services, and pet care businesses",
+    "url": "https://marketingaihouston.com/services/google-business-profile",
+    "telephone": "+1-713-555-0123",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Houston",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "29.7604",
+      "longitude": "-95.3698"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Houston",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Texas"
+        }
+      },
+      {
+        "@type": "Place",
+        "name": "The Heights, Houston"
+      },
+      {
+        "@type": "Place",
+        "name": "Sugar Land, TX"
+      },
+      {
+        "@type": "Place",
+        "name": "Katy, TX"
+      },
+      {
+        "@type": "Place",
+        "name": "Cypress, TX"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digital Marketing Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Google Business Profile Optimization",
+            "description": "Complete Google Business Profile setup, photo optimization, and review generation system for Houston service businesses",
+            "serviceType": "Local SEO and Business Profile Optimization",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Marketing AI Houston"
+            },
+            "areaServed": "Houston, TX",
+            "audience": {
+              "@type": "Audience",
+              "name": "Houston Contractors, Auto Shops, Cleaning Services, Pet Care Businesses"
+            }
+          },
+          "price": "497",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "497",
+            "priceCurrency": "USD",
+            "valueAddedTaxIncluded": true,
+            "billingIncrement": "One-time setup fee"
+          },
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2025-01-01"
+        }
+      ]
+    },
+    "sameAs": [
+      "https://www.facebook.com/MarketingAIHouston",
+      "https://www.linkedin.com/company/marketing-ai-houston"
+    ]
+  }
+  </script>
 
 </BaseLayout>
 
@@ -569,7 +642,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   .faq-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
     max-width: 1200px;
