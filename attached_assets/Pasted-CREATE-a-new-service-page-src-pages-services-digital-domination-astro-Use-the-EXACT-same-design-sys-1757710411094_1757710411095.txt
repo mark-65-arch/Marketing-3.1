@@ -1,0 +1,72 @@
+CREATE a new service page: src/pages/services/digital-domination.astro
+Use the EXACT same design system, layout, and structure as the Digital Foundation page, but with this content:
+Hero Section:
+
+Title: "Complete Digital Domination for Houston Businesses"
+Subtitle: "Comprehensive 15-25 page website + Google Business Profile optimization + 90-day optimization for Houston contractors, auto repair, cleaning services, and pet businesses. Results vary by business and market conditions."
+Price: "$3,497" with "One-time setup"
+CTA: "GET STARTED TODAY" and phone number
+
+Problem Section:
+
+Title: "Why Your Houston Business Isn't Dominating Local Search"
+Intro: "Every day, potential customers search online for contractors, auto repair, cleaning services, and pet care. Without a comprehensive website AND ongoing optimization, you're losing customers to competitors who invest in complete digital domination."
+3 Cards:
+
+"Limited Online Presence" - Small websites can't compete with comprehensive competitors
+"No Ongoing Optimization" - Static websites fall behind in search rankings over time
+"Competitors Dominate Search" - Comprehensive competitors capture most of the market
+
+
+
+What You Get Section:
+
+Title: "Exactly What You Get for $3,497"
+Subtitle: "Complete digital domination with comprehensive website, Google Business Profile optimization, AND 90-day optimization - no hidden fees or monthly charges. Houston-based digital marketing specialist with no long-term contracts required."
+3 Cards:
+
+Comprehensive 15-25 Page Website: Individual service pages, location pages, about/history, team bios, gallery pages, testimonials page, FAQ page, blog setup
+Advanced Features & Optimization: Mobile-responsive design, fast loading speeds, search engine optimized, professional Houston branding, contact forms, quote request forms
+Complete Google Business Profile + 90-Day Optimization: Business verification, optimized categories, 15 photos organized, review generation system, 90-day monitoring and optimization included
+
+
+
+What You Need to Provide Section:
+
+Title: "What You Need to Provide"
+Subtitle: "Simple requirements to get your Houston business completely dominated online"
+4 Cards:
+
+Extensive Photos & Visual Content: 25-30 high-quality photos, team photos, work portfolio, before/after examples, logo and branding materials
+Comprehensive Business Information: Detailed service descriptions, pricing information, company history, team bios, existing marketing materials
+Service Area & Target Details: Houston neighborhoods served, target customer profiles, competitor information, business goals and objectives
+Access & Verification: Google account access, business verification documents, existing website content (if any), social media accounts
+
+
+
+Perfect For Section:
+
+Title: "Perfect for Houston Contractors, Auto Shops, and Service Businesses"
+Subtitle: "Industries where comprehensive digital domination services are most commonly requested"
+4 Cards: Same industries as other pages but emphasize "comprehensive online presence," "compete with established competitors," and "dominate local search results"
+
+FAQ Section - Include these questions:
+
+"Can I update the website myself?" (Same answer as Digital Foundation)
+"How much do website updates cost?" (Same answer)
+"How fast can you make website changes?" (Same answer)
+"Do you offer ongoing maintenance packages?" (Same answer)
+"What does the complete domination package cost?" - "$3,497 one-time for comprehensive website + Google Business Profile + 90-day optimization"
+"How long does the complete setup take?" - "3-4 weeks after you provide all content, photos, and business information"
+"Do I own the website and profile?" (Same answer as other pages)
+"Are you a Houston-based company?" (Same answer)
+"Do you require long-term contracts?" (Same answer)
+"What makes your approach different?" (Same answer)
+
+Final CTA:
+
+Title: "Ready to Dominate Your Houston Market?"
+Subtitle: "Comprehensive website plus Google Business Profile optimization plus 90-day optimization that helps Houston contractors, auto shops, and service businesses establish complete market dominance. Results may vary by business and market conditions."
+Button: "GET YOUR $3,497 DOMINATION"
+
+IMPORTANT: Use identical styling, colors, layout, and legal disclaimer as the other service pages. This should look like part of the same website family.
