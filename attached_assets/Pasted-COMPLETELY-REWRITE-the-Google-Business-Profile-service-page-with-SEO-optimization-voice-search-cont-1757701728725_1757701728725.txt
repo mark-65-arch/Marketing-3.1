@@ -1,0 +1,86 @@
+COMPLETELY REWRITE the Google Business Profile service page with SEO optimization, voice search content, and clear expectations. Keep all design and styling exactly the same.
+PAGE STRUCTURE AND CONTENT:
+1. UPDATE PAGE TITLE AND META:
+
+Page title: "Google Business Profile Optimization Houston - $497 | Marketing AI Houston"
+Meta description: "Professional Google Business Profile optimization for Houston contractors, auto shops, cleaning services. Get found when customers search 'near me'. $497 one-time setup."
+
+2. HERO SECTION - UPDATE CONTENT:
+
+H1: "Google Business Profile Optimization for Houston Businesses"
+Subtitle: "Get found when Houston customers search for contractors, auto repair, cleaning services, and pet care 'near me'. Professional setup and optimization that typically drives more phone calls within 30 days."
+Keep $497 pricing and button
+
+3. REPLACE "WHAT'S INCLUDED" SECTION:
+Title: "Exactly What You Get for $497"
+Card 1: Complete Profile Setup
+
+Verify business location and ownership with Google
+Set up primary category (e.g., 'Plumbing Service') and 3 secondary categories
+Input all service descriptions with Houston-area keywords
+Configure service areas within 25-mile radius
+Optimize business hours and contact information
+
+Card 2: Photo Organization & Optimization
+
+Upload and organize up to 15 existing photos you provide
+Create proper categories: exterior, interior, team, before/after work examples
+Write keyword-optimized descriptions for each photo
+Set cover photo and logo image
+No professional photography included - we optimize what you have
+
+Card 3: Review Generation System
+
+Email templates for requesting reviews (3 different versions)
+Text message scripts for immediate post-service review requests
+QR code creation for easy customer review access
+GMB messaging setup with 5 auto-reply templates
+15-minute training call showing you how to use everything
+
+4. ADD NEW SECTION: "What You Need to Provide"
+
+15 high-quality photos of your business (interior, exterior, team, work examples)
+Business license and verification documents
+Complete list of services you offer
+Service area preferences within Houston metro
+Access to existing Google Business Profile (or we'll create new one)
+
+5. UPDATE "PERFECT FOR" SECTION:
+Title: "Perfect for These Houston Service Businesses"
+Contractors & Trades: Plumbers, electricians, HVAC, handymen serving Houston neighborhoods who need emergency repair visibility
+Auto Shops: Mechanics, tire shops, oil change services competing for "auto repair near me" and "car service Houston" searches
+Cleaning Services: House cleaning, commercial cleaning, pressure washing serving Houston residential and business areas
+Pet Services: Dog grooming, pet sitting, veterinary clinics where customer photos and reviews drive bookings
+6. REPLACE FAQ SECTION WITH VOICE SEARCH OPTIMIZED QUESTIONS:
+How much does Google Business Profile optimization cost in Houston?
+Our complete optimization service is $497 one-time. This includes profile setup, photo organization, and review generation system with training.
+How long does Google Business Profile optimization take?
+Setup takes 5-7 business days after you provide photos and business information. You typically see improved search visibility within 2-4 weeks.
+Do I need professional photos for my Google Business listing?
+No professional photography required. We optimize and organize up to 15 existing photos you provide of your business, team, and work examples.
+What if my Houston business doesn't have a Google Business Profile yet?
+We'll create it from scratch using your business information and get everything properly verified with Google for your Houston location.
+Can you help get more Google reviews for my Houston business?
+We provide email templates, text scripts, and QR codes to make requesting reviews easy, plus training on when and how to ask customers.
+Is this a monthly service or one-time setup?
+This is a one-time optimization. Your profile belongs to you forever. For ongoing management, consider our Complete Digital Domination package.
+7. UPDATE CTA SECTION:
+Title: "Ready to Get Found by More Houston Customers?"
+Content: "Professional Google Business Profile optimization that helps Houston contractors, auto shops, and service businesses appear when customers search 'near me'"
+Button: "GET YOUR $497 MAKEOVER"
+8. SEO REQUIREMENTS:
+
+Use proper H1, H2, H3 heading structure throughout
+Include "Houston" naturally in headings and content
+Add schema markup for LocalBusiness and Service
+Include neighborhood names: "Spring, Katy, Cypress, The Heights, Sugar Land"
+Target voice search phrases: "near me", "in Houston", "best [service] Houston"
+
+9. LEGAL SAFETY LANGUAGE:
+
+Use "typically see" instead of "will see"
+"Usually results in" instead of "guarantees"
+"Most businesses experience" instead of definitive claims
+Add disclaimer: "Results may vary by business and market conditions"
+
+MAINTAIN: All current design, colors, spacing, layout, and responsive behavior exactly as homepage.
