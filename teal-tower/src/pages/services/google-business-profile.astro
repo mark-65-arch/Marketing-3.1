@@ -88,32 +88,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div class="requirements-grid">
         <div class="requirement-item">
           <div class="requirement-icon">📷</div>
-          <h3>15 High-Quality Photos</h3>
-          <p>Interior, exterior, team photos, and work examples from your phone or camera</p>
+          <h3>Photos & Visual Content</h3>
+          <p>15 high-quality photos of your business: interior, exterior, team photos, and work examples from your phone or camera</p>
         </div>
         
         <div class="requirement-item">
           <div class="requirement-icon">📄</div>
-          <h3>Business Documents</h3>
-          <p>Business license and verification documents for Google approval</p>
-        </div>
-        
-        <div class="requirement-item">
-          <div class="requirement-icon">📝</div>
-          <h3>Service List</h3>
-          <p>Complete list of services you offer to Houston customers</p>
+          <h3>Business Information & Documents</h3>
+          <p>Business license, verification documents for Google approval, and complete list of services you offer to Houston customers</p>
         </div>
         
         <div class="requirement-item">
           <div class="requirement-icon">🗺️</div>
-          <h3>Service Area Preferences</h3>
-          <p>Which Houston neighborhoods and metro areas you serve</p>
+          <h3>Service Area Details</h3>
+          <p>Which Houston neighborhoods and metro areas you serve, along with your preferred service radius</p>
         </div>
         
         <div class="requirement-item">
           <div class="requirement-icon">🔑</div>
           <h3>Google Account Access</h3>
-          <p>Access to existing Google Business Profile or we'll create a new one</p>
+          <p>Access to existing Google Business Profile or we'll create a new one for your Houston business location</p>
         </div>
       </div>
     </div>
@@ -296,7 +290,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   /* What's Included Section */
   .whats-included {
-    background: var(--white);
+    background: #f8fafc;
     padding: 5rem 0;
   }
 
@@ -370,7 +364,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   /* Perfect For Section */
   .perfect-for {
-    background: var(--secondary-bg);
+    background: #f8fafc;
     padding: 5rem 0;
   }
 
@@ -444,7 +438,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   .requirements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 0;
     max-width: 1200px;
@@ -503,40 +497,45 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   .faq-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-top: 0;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .faq-item {
-    background: var(--secondary-bg);
-    border-radius: var(--border-radius);
-    padding: 2rem;
-    transition: var(--transition);
+    background: transparent;
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.4s ease;
+    text-align: left;
+    border: 1px solid transparent;
   }
 
   .faq-item:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
+    background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(255, 255, 255, 0.95));
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(249, 87, 56, 0.15);
+    border: 1px solid rgba(249, 87, 56, 0.2);
   }
 
   .faq-item h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--text-primary);
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #333;
     margin-bottom: 1rem;
   }
 
   .faq-item p {
-    color: var(--text-secondary);
+    color: #666;
     line-height: 1.6;
   }
 
   /* CTA Section */
   .final-cta {
-    background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
+    background: var(--text-primary);
     color: white;
     padding: 5rem 0;
   }
@@ -645,6 +644,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       gap: 1.5rem;
     }
 
+    .faq-grid {
+      margin-top: 2rem;
+    }
+
     .included-card,
     .requirement-item,
     .industry-card,
@@ -652,8 +655,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       padding: 1.5rem;
     }
 
-    .requirements-grid {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    .faq-item h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-item p {
+      font-size: 0.95rem;
+      line-height: 1.5;
     }
 
     .cta-title {
