@@ -1,0 +1,35 @@
+LEGAL AND CONTENT SAFETY FIXES: Remove guarantees and problematic claims while keeping all design and layout exactly the same.
+IMPORTANT: Keep ALL current design, styling, layouts, colors, spacing, and responsive behavior exactly the same. Only change specific text content to avoid legal issues.
+1. FIX "WHY HOUSTON SMALL BUSINESS OWNERS" SECTION:
+Replace "30-Day Results Guarantee" card with:
+"Fast Results Focus"
+"Google Business Profile optimization typically shows improvements within 30 days. Most clients see initial results quickly."
+2. FIX INDUSTRIES SECTION DESCRIPTIONS:
+Auto Repair Shops - Replace:
+"Mobile-friendly booking increases conversions 40%+. Show up when people search 'oil change near me' or 'car repair Houston.' Budget: $1,500-$2,500/month, Quick decision makers."
+With:
+"Mobile-friendly booking can significantly increase conversions. Show up when people search 'oil change near me' or 'car repair Houston.' Quick decision makers who see immediate value."
+Cleaning Services - Replace:
+"Review generation increases bookings 35%. Service area optimization captures your neighborhoods. Budget: $1,000-$2,000/month, Same-day decisions common."
+With:
+"Review generation typically increases bookings. Service area optimization captures your neighborhoods. Same-day decisions common."
+Remove ALL budget ranges from the other 3 industry descriptions (Independent Contractors, Landscaping, Pet Services). Keep everything else the same but delete the "Budget: X−X-
+X−X/month" parts.
+
+3. FIX FAQ SECTION:
+Replace this FAQ answer:
+"Google Business Profile updates typically show results within 30 days. Most clients see increased calls and form submissions within the first month."
+With:
+"Google Business Profile improvements often show results within 30-60 days. Most clients see increased visibility and inquiries as optimizations take effect."
+4. ADD LEGAL DISCLAIMER:
+Add at the bottom of the page, just before the footer:
+"Results may vary by business and market conditions. Past performance doesn't guarantee future results."
+5. KEEP EVERYTHING ELSE EXACTLY THE SAME:
+
+Don't change any other content
+Keep all pricing in "Simple Services" section as-is ($497, $997, $1,497/month)
+Preserve all design elements, colors, spacing
+Keep navigation, footer, geographic sections unchanged
+Maintain all current responsive behavior
+
+RESULT: Legally safer content that removes guarantees and unsubstantiated claims while maintaining marketing effectiveness and professional appearance.
