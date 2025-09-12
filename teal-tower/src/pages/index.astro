@@ -262,7 +262,7 @@ const houstonAreas = {
 <style>
   /* Hero Section */
   .hero {
-    background: #F9FBF2;
+    background: url('/hero-background.webp') center center / cover no-repeat;
     color: var(--text-primary);
     padding: 8rem 0 6rem;
     text-align: center;
@@ -270,31 +270,28 @@ const houstonAreas = {
     overflow: hidden;
   }
 
-  .hero::before,
-  .hero::after {
+  .hero::before {
     content: '';
     position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(249, 251, 242, 0.85);
     z-index: 1;
   }
 
-  /* Large circle - top right */
-  .hero::before {
-    width: 500px;
-    height: 500px;
-    background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(249, 87, 56, 0.03));
-    top: -250px;
-    right: -250px;
-  }
-
-  /* Medium circle - bottom left */
   .hero::after {
+    content: '';
+    position: absolute;
     width: 350px;
     height: 350px;
-    background: linear-gradient(45deg, rgba(107, 114, 128, 0.05), transparent);
+    background: linear-gradient(45deg, rgba(249, 87, 56, 0.08), transparent);
     bottom: -175px;
     left: -175px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 2;
   }
 
   /* Additional geometric shapes */
