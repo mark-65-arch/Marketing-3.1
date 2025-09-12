@@ -23,6 +23,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           </div>
           <div class="hero-cta">
             <a href="/contact" class="btn-primary-hero">GET STARTED TODAY</a>
+            <p class="hero-phone">Or call <a href="tel:(713)555-0123" class="phone-link">(713) 555-0123</a></p>
           </div>
         </div>
       </div>
@@ -30,7 +31,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <!-- What's Included Section -->
-  <section class="whats-included">
+  <section class="whats-included" id="whats-included">
     <div class="container">
       <h2 class="section-title text-center">Exactly What You Get for $497</h2>
       <p class="section-subtitle text-center">
@@ -74,6 +75,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           </ul>
         </div>
       </div>
+      
+      <!-- CTA after What's Included -->
+      <div class="section-cta">
+        <a href="/contact" class="btn-primary">Get Started - $497</a>
+      </div>
     </div>
   </section>
 
@@ -114,7 +120,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <!-- Perfect For Section -->
-  <section class="perfect-for">
+  <section class="perfect-for" id="perfect-for">
     <div class="container">
       <h2 class="section-title text-center">Perfect for These Houston Service Businesses</h2>
       <p class="section-subtitle text-center">
@@ -146,6 +152,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <p>Dog grooming, pet sitting, veterinary clinics where customer photos and reviews drive bookings</p>
         </div>
       </div>
+      
+      <!-- CTA after Perfect For -->
+      <div class="section-cta">
+        <a href="/contact" class="btn-secondary learn-more">Learn More</a>
+      </div>
     </div>
   </section>
 
@@ -156,37 +167,47 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       
       <div class="faq-grid">
         <div class="faq-item">
-          <h3>How much does Google Business Profile optimization cost in Houston?</h3>
+          <h3>What does GMB optimization cost?</h3>
           <p>Our complete optimization service is $497 one-time. This includes profile setup, photo organization, and review generation system with training.</p>
         </div>
         
         <div class="faq-item">
-          <h3>How long does Google Business Profile optimization take?</h3>
+          <h3>How long does setup take?</h3>
           <p>Setup takes 5-7 business days after you provide photos and business information. You typically see improved search visibility within 2-4 weeks.</p>
         </div>
         
         <div class="faq-item">
-          <h3>Do I need professional photos for my Google Business listing?</h3>
-          <p>No professional photography required. We optimize and organize up to 15 existing photos you provide of your business, team, and work examples.</p>
+          <h3>Do I need professional photos?</h3>
+          <p>No professional photography required. We optimize and organize up to 15 existing photos you provide.</p>
         </div>
         
         <div class="faq-item">
-          <h3>What if my Houston business doesn't have a Google Business Profile yet?</h3>
-          <p>We'll create it from scratch using your business information and get everything properly verified with Google for your Houston location.</p>
+          <h3>What if I don't have a Google Business Profile yet?</h3>
+          <p>We'll create it from scratch using your business information. We'll handle the entire verification process with Google.</p>
         </div>
         
         <div class="faq-item">
-          <h3>Can you help get more Google reviews for my Houston business?</h3>
-          <p>We provide email templates, text scripts, and QR codes to make requesting reviews easy, plus training on when and how to ask customers.</p>
+          <h3>Can you help get more Google reviews?</h3>
+          <p>We provide email templates, text scripts, and QR codes to make requesting reviews easy. Plus training on when and how to ask customers.</p>
         </div>
         
         <div class="faq-item">
           <h3>Is this a monthly service or one-time setup?</h3>
-          <p>This is a one-time optimization. Your profile belongs to you forever. For ongoing management, consider our Complete Digital Domination package.</p>
+          <p>This is a one-time optimization. Your profile belongs to you forever.</p>
         </div>
+      </div>
+      
+      <!-- CTA after FAQ -->
+      <div class="section-cta">
+        <a href="/contact" class="btn-primary">Start Your Makeover</a>
       </div>
     </div>
   </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
 
   <!-- CTA Section -->
   <section class="final-cta">
@@ -205,6 +226,30 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
 </BaseLayout>
+
+<script>
+  // Back to top button functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    
+    // Smooth scroll to top when clicked
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
 
 <style>
   /* Hero Section */
@@ -288,6 +333,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     box-shadow: var(--shadow-button-hover);
   }
 
+  .hero-phone {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+  }
+
+  .phone-link {
+    color: var(--primary-orange);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .phone-link:hover {
+    text-decoration: underline;
+  }
+
   /* What's Included Section */
   .whats-included {
     background: #f8fafc;
@@ -302,6 +363,23 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   .whats-included .section-title {
     margin-bottom: 3.75rem;
+  }
+
+  /* Ensure proper H2 styling */
+  .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .section-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    text-align: center;
+    line-height: 1.6;
   }
 
   .included-grid {
@@ -596,6 +674,83 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     color: var(--primary-orange);
   }
 
+  /* Section CTAs */
+  .section-cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    box-shadow: var(--shadow-button);
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, var(--accent-coral), var(--primary-orange));
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-button-hover);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--primary-orange);
+    padding: 1rem 2rem;
+    border: 2px solid var(--primary-orange);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    display: inline-block;
+  }
+
+  .btn-secondary:hover {
+    background: var(--primary-orange);
+    color: white;
+    transform: translateY(-3px);
+  }
+
+  /* Back to Top Button */
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-orange);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .back-to-top:hover {
+    background: var(--accent-coral);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .hero {
@@ -687,6 +842,30 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     .section-subtitle {
       font-size: 1.2rem;
+    }
+
+    .hero-phone {
+      font-size: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .section-cta {
+      margin-top: 2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+      max-width: 280px;
+      padding: 1rem 1.5rem;
+    }
+
+    .back-to-top {
+      bottom: 15px;
+      right: 15px;
+      width: 45px;
+      height: 45px;
+      font-size: 1.3rem;
     }
   }
 </style>
