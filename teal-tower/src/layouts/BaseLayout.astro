@@ -197,6 +197,61 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
       transform: translateY(-2px);
       box-shadow: var(--shadow-button-hover);
     }
+
+    /* Dropdown Navigation */
+    .nav-dropdown {
+      position: relative;
+    }
+
+    .dropdown-toggle {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-hover);
+      padding: 1rem 0;
+      min-width: 280px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: var(--transition);
+      z-index: 1000;
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-link {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+      border-radius: 0;
+    }
+
+    .dropdown-link:hover {
+      background: var(--secondary-bg);
+      color: var(--primary-orange);
+    }
+
+    .dropdown-price {
+      color: var(--primary-orange);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
     
     /* Mobile Menu */
     .mobile-menu-toggle {
@@ -277,6 +332,42 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
       background: linear-gradient(135deg, var(--accent-coral), var(--primary-orange));
       transform: translateY(-2px);
       box-shadow: var(--shadow-hover);
+    }
+
+    /* Mobile Services Section */
+    .mobile-services {
+      border-top: 1px solid rgba(107, 114, 128, 0.2);
+      border-bottom: 1px solid rgba(107, 114, 128, 0.2);
+      margin: 1rem 0;
+      padding: 1rem 0;
+    }
+
+    .mobile-services-title {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .mobile-services-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .mobile-services-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .mobile-services-list .mobile-nav-link {
+      padding-left: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-light);
+    }
+
+    .mobile-services-list .mobile-nav-link:hover {
+      color: var(--primary-orange);
     }
     
     /* Main Content */
@@ -506,6 +597,14 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
       
       <ul class="nav-menu">
         <li><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Services ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="/services/google-business-profile" class="dropdown-link">Google Business Profile <span class="dropdown-price">($497)</span></a></li>
+            <li><a href="/services/digital-foundation" class="dropdown-link">Digital Foundation <span class="dropdown-price">($1,497)</span></a></li>
+            <li><a href="/services/digital-domination" class="dropdown-link">Digital Domination <span class="dropdown-price">($3,497)</span></a></li>
+          </ul>
+        </li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="/contact" class="nav-cta">CONTACT</a></li>
       </ul>
@@ -515,6 +614,14 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
       <div class="mobile-menu" id="mobile-menu">
         <ul class="mobile-nav-menu">
           <li><a href="/" class="mobile-nav-link">Home</a></li>
+          <li class="mobile-services">
+            <span class="mobile-services-title">Services</span>
+            <ul class="mobile-services-list">
+              <li><a href="/services/google-business-profile" class="mobile-nav-link">Google Business Profile ($497)</a></li>
+              <li><a href="/services/digital-foundation" class="mobile-nav-link">Digital Foundation ($1,497)</a></li>
+              <li><a href="/services/digital-domination" class="mobile-nav-link">Digital Domination ($3,497)</a></li>
+            </ul>
+          </li>
           <li><a href="#about" class="mobile-nav-link">About</a></li>
           <li><a href="/contact" class="mobile-nav-cta">CONTACT</a></li>
         </ul>
@@ -568,6 +675,14 @@ const { title, description, keywords = "Houston digital marketing, SEO services 
           }
         });
       }
+
+      // Dropdown navigation for desktop
+      const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+      dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+          e.preventDefault();
+        });
+      });
     });
   </script>
 </body>
