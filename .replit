@@ -9,10 +9,10 @@ requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
 channel = "stable-25_05"
 
 [deployment]
-run = ["bash", "-c", "cd teal-tower && npm run preview"]
+run = ["npm", "run", "preview"]
 deploymentTarget = "autoscale"
 ignorePorts = false
-build = ["bash", "-c", "cd teal-tower && npm ci && npm run build"]
+build = ["npm", "run", "build"]
 
 [agent]
 expertMode = true
@@ -68,6 +68,10 @@ externalPort = 4200
 [[ports]]
 localPort = 44387
 externalPort = 5173
+
+[[ports]]
+localPort = 44535
+externalPort = 3001
 
 [[ports]]
 localPort = 46581
