@@ -196,11 +196,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <p>This is a one-time optimization. Your profile belongs to you forever.</p>
         </div>
       </div>
-      
-      <!-- CTA after FAQ -->
-      <div class="section-cta">
-        <a href="/contact" class="btn-primary">Start Your Makeover</a>
-      </div>
     </div>
   </section>
 
@@ -219,7 +214,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         </p>
         <div class="cta-buttons">
           <a href="/contact" class="btn-primary">GET YOUR $497 MAKEOVER</a>
-          <a href="tel:+17135550123" class="btn-secondary">CALL (713) 555-0123</a>
         </div>
       </div>
     </div>
@@ -646,9 +640,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   .cta-buttons {
     display: flex;
-    gap: 1.5rem;
     justify-content: center;
-    flex-wrap: wrap;
     margin-top: 2.5rem;
   }
 
@@ -824,13 +816,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       font-size: 2rem;
     }
 
-    .cta-buttons {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .cta-buttons .btn-primary,
-    .cta-buttons .btn-secondary {
+    .cta-buttons .btn-primary {
       width: 100%;
       max-width: 300px;
     }
