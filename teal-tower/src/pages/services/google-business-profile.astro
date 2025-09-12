@@ -33,6 +33,36 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <!-- Problem Awareness Section -->
+  <section class="problem-awareness">
+    <div class="container">
+      <h2 class="section-title text-center">Why Your Houston Business Isn't Getting Found</h2>
+      <p class="section-subtitle text-center">
+        Every day, potential customers search 'near me' for contractors, auto repair, cleaning services, and pet care. If your Google Business Profile isn't optimized, they're finding your competitors instead. That's lost revenue you can't get back.
+      </p>
+      
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="card-icon">⭐</div>
+          <h3>No Reviews Strategy</h3>
+          <p>Customers won't call businesses with few or no Google reviews</p>
+        </div>
+        
+        <div class="problem-card">
+          <div class="card-icon">🔍</div>
+          <h3>Poor Search Visibility</h3>
+          <p>Your business doesn't appear when people search your services</p>
+        </div>
+        
+        <div class="problem-card">
+          <div class="card-icon">📞</div>
+          <h3>Competitors Get the Calls</h3>
+          <p>Better-optimized competitors capture your potential customers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- What's Included Section -->
   <section class="whats-included" id="whats-included">
     <div class="container">
@@ -439,6 +469,57 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     text-decoration: underline;
   }
 
+  /* Problem Awareness Section */
+  .problem-awareness {
+    background: #f8fafc;
+    padding: 5rem 0;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .problem-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    border-left: 4px solid #F95738;
+  }
+
+  .problem-card:hover {
+    background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(255, 255, 255, 0.95));
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(249, 87, 56, 0.15);
+  }
+
+  .problem-card .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .problem-card h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .problem-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+
   /* What's Included Section */
   .whats-included {
     background: #f8fafc;
@@ -548,10 +629,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   .industry-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 0;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -881,6 +962,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     .included-grid,
     .requirements-grid,
+    .problem-grid,
     .industry-grid,
     .faq-grid {
       grid-template-columns: 1fr;
@@ -893,6 +975,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     .included-card,
     .requirement-item,
+    .problem-card,
     .industry-card,
     .faq-item {
       padding: 1.5rem;
