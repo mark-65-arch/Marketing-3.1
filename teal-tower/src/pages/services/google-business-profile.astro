@@ -30,7 +30,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <!-- What's Included Section -->
-  <section class="whats-included section-padding">
+  <section class="whats-included">
     <div class="container">
       <h2 class="section-title text-center">What's Included in Your Makeover</h2>
       <p class="section-subtitle text-center">
@@ -75,7 +75,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <!-- Perfect For Section -->
-  <section class="perfect-for section-padding">
+  <section class="perfect-for">
     <div class="container">
       <h2 class="section-title text-center">Perfect For These Houston Businesses</h2>
       <p class="section-subtitle text-center">
@@ -111,7 +111,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <!-- FAQ Section -->
-  <section class="faq section-padding">
+  <section class="faq">
     <div class="container">
       <h2 class="section-title text-center">Frequently Asked Questions</h2>
       
@@ -140,7 +140,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <!-- CTA Section -->
-  <section class="final-cta section-padding">
+  <section class="final-cta">
     <div class="container">
       <div class="cta-content">
         <h2 class="cta-title">Ready to Get Found by More Houston Customers?</h2>
@@ -242,13 +242,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   /* What's Included Section */
   .whats-included {
     background: var(--white);
+    padding: 5rem 0;
+  }
+
+  .whats-included .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .whats-included .section-title {
+    margin-bottom: 3.75rem;
   }
 
   .included-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 0;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .included-card {
@@ -258,11 +271,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     box-shadow: var(--shadow);
     transition: var(--transition);
     text-align: center;
+    border: 1px solid transparent;
   }
 
   .included-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
+    background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(255, 255, 255, 0.95));
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(249, 87, 56, 0.15);
+    border: 1px solid rgba(249, 87, 56, 0.2);
   }
 
   .card-icon {
@@ -300,13 +316,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   /* Perfect For Section */
   .perfect-for {
     background: var(--secondary-bg);
+    padding: 5rem 0;
+  }
+
+  .perfect-for .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .perfect-for .section-title {
+    margin-bottom: 3.75rem;
   }
 
   .industry-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 0;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .industry-card {
@@ -319,8 +348,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   }
 
   .industry-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
+    background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(255, 255, 255, 0.95));
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(249, 87, 56, 0.15);
+    border: 1px solid rgba(249, 87, 56, 0.2);
   }
 
   .industry-icon {
@@ -343,13 +374,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   /* FAQ Section */
   .faq {
     background: var(--white);
+    padding: 5rem 0;
+  }
+
+  .faq .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .faq .section-title {
+    margin-bottom: 3.75rem;
   }
 
   .faq-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 0;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .faq-item {
@@ -380,6 +424,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .final-cta {
     background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
     color: white;
+    padding: 5rem 0;
+  }
+
+  .final-cta .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
 
   .cta-content {
@@ -397,7 +448,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   .cta-subtitle {
     font-size: 1.2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
   }
@@ -407,6 +458,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 2.5rem;
   }
 
   .cta-buttons .btn-primary {
@@ -438,6 +490,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       padding: 6rem 0 3rem;
     }
 
+    .hero-container {
+      padding: 0 1rem;
+    }
+
     .hero-title {
       font-size: 3rem;
     }
@@ -450,10 +506,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       font-size: 2.5rem;
     }
 
+    /* Section padding adjustments for mobile */
+    .whats-included,
+    .perfect-for,
+    .faq,
+    .final-cta {
+      padding: 4rem 0;
+    }
+
+    .whats-included .container,
+    .perfect-for .container,
+    .faq .container,
+    .final-cta .container {
+      padding: 0 1rem;
+    }
+
     .included-grid,
     .industry-grid,
     .faq-grid {
       grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .included-card,
+    .industry-card,
+    .faq-item {
+      padding: 1.5rem;
     }
 
     .cta-title {
@@ -469,6 +547,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     .cta-buttons .btn-secondary {
       width: 100%;
       max-width: 300px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
     }
   }
 </style>
