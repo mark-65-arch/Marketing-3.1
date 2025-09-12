@@ -1,0 +1,100 @@
+MAJOR CONTENT OVERHAUL: Refocus homepage on Quick Win Industries while preserving all design elements and layouts we've established.
+IMPORTANT: Keep ALL current design, styling, layouts, colors, spacing, and responsive behavior exactly the same. Only change the text content and messaging.
+1. HERO SECTION CONTENT CHANGES:
+Replace current hero headline with:
+"Get Found When Houston Customers Search 'Near Me'"
+Replace current hero subtitle with:
+"Help your contractors, auto shop, cleaning service, landscaping, or pet business show up first in Google searches. Simple fixes that drive phone calls in 30 days."
+Keep all hero styling, button, and layout exactly the same.
+2. COMPLETE INDUSTRIES SECTION REPLACEMENT:
+Replace the current 5 industries with these 5 Quick Win Industries (maintain 2x2+1 layout):
+Independent Contractors & Trades
+"Plumbers, electricians, handymen - get found before your competitors. Before/after photos and Google optimization drive immediate calls."
+
+Budget: $1,500-$3,000/month
+Results in 30 days
+
+Auto Repair Shops
+"Mobile-friendly booking increases conversions 40%+. Show up when people search 'oil change near me' or 'car repair Houston.'"
+
+Budget: $1,500-$2,500/month
+Quick decision makers
+
+Cleaning Services
+"Review generation increases bookings 35%. Service area optimization captures your neighborhoods."
+
+Budget: $1,000-$2,000/month
+Same-day decisions common
+
+Landscaping & Lawn Care
+"Before/after galleries drive immediate interest. Seasonal service pages capture high-intent traffic."
+
+Budget: $1,500-$3,000/month
+Seasonal urgency
+
+Pet Services
+"Instagram presence drives bookings. Google Business Profile photos are crucial for pet owners."
+
+Budget: $1,000-$2,000/month
+Emotional decisions
+
+3. UPDATE "WHY SMART BUSINESSES" SECTION:
+Change section heading to: "Why Houston Small Business Owners Work With Us"
+Replace the 4 cards with:
+Owner-to-Owner Communication
+"You talk directly to me, not an account manager. I understand running a small business because I am one."
+30-Day Results Guarantee
+"Google Business Profile optimization shows results in 30 days, or we extend service at no cost."
+No Corporate Overhead
+"Solo agency means no inflated prices. You get enterprise-level service at small business prices."
+Before/After Proof
+"See exactly what your competitors' Google profiles look like vs. what yours will look like."
+4. ADD NEW SECTION after Industries (before Geographic):
+"Simple Services, Big Impact"
+Create 3 cards in same style as other sections:
+Google Business Profile Makeover - $497
+
+Professional photos
+Complete profile optimization
+Review generation setup
+Results in 30 days
+
+Mobile Website Fix - $997
+
+Mobile-friendly design
+Click-to-call buttons
+Contact form optimization
+Booking system setup
+
+"Near Me" Search Domination - $1,497/month
+
+Local SEO optimization
+Google My Business management
+Review monitoring
+Monthly performance reports
+
+5. UPDATE FAQ QUESTIONS:
+Replace current questions with:
+"I'm not tech-savvy. Will this be complicated?"
+"Not at all. I handle everything while you focus on your business. You'll see the results without learning anything new."
+"How quickly will I see more phone calls?"
+"Most clients see increased calls within 30 days from Google Business Profile optimization alone."
+"Do you work with businesses like mine?"
+"I specialize in contractors, auto shops, cleaning services, landscaping, and pet businesses - exactly the industries ignored by big agencies."
+"What if I can't afford a big monthly fee?"
+"I have starter packages from $497 one-time up to $2,500/month. We start small and grow as you see results."
+"How do you track phone calls from marketing?"
+"Call tracking shows exactly which Google searches and website visitors turn into paying customers."
+"Do I need a long-term contract?"
+"No contracts required. Most clients stay because they see results, not because they're locked in."
+6. PRESERVE ALL DESIGN ELEMENTS:
+
+Keep exact same color scheme and styling
+Maintain all spacing and padding
+Keep responsive mobile behavior
+Preserve navigation and footer exactly as is
+Don't change any layout structures or card designs
+Keep the geographic areas section exactly as is
+Maintain consistent typography and button styling
+
+RESULT: Content completely refocused on Quick Win Industries while maintaining all the professional design elements we've perfected.
