@@ -21,5 +21,42 @@ export default defineConfig({
     ].filter(Boolean)
   },
 
-  integrations: [sitemap(), partytown()]
+  // Performance optimizations
+  vite: {
+    build: {
+      cssMinify: true,
+      rollupOptions: {
+        output: {
+          // Better CSS chunking for performance
+          manualChunks: {
+            vendor: ['astro'],
+          },
+          assetFileNames: (assetInfo) => {
+            let extType = assetInfo.name.split('.').at(1);
+            if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+              extType = 'img';
+            }
+            return `assets/${extType}/[name]-[hash][extname]`;
+          },
+        }
+      }
+    },
+    css: {
+      devSourcemap: false
+    }
+  },
+
+  // Build optimizations
+  build: {
+    inlineStylesheets: 'auto'
+  },
+
+  integrations: [
+    sitemap(), 
+    partytown({
+      config: {
+        forward: ["dataLayer.push"]
+      }
+    })
+  ]
 });
