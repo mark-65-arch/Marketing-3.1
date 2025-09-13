@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Get the base path from the site configuration - only use base path in production
+const base = import.meta.env.MODE === 'development' ? '/' : (import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/');
 ---
 
 <BaseLayout 
@@ -10,7 +13,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="/google-business-profile-optimization-houston-contractors-auto-shops.jpg" 
+    <img src={`${base}google-business-profile-optimization-houston-contractors-auto-shops.jpg`} 
          alt="Google Business Profile optimization service for Houston contractors, auto repair shops, cleaning services helping businesses get found in local searches" 
          class="hero-background-image" />
     <div class="hero-container">
