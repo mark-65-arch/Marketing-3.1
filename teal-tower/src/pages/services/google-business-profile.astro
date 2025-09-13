@@ -399,7 +399,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     color: var(--text-primary);
     line-height: 1.1;
     margin-bottom: 3rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -415,7 +415,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     line-height: 1.6;
     margin-bottom: 3rem;
     font-weight: 400;
-    max-width: 600px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -501,7 +501,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     box-shadow: var(--shadow);
     transition: var(--transition);
     text-align: center;
-    border-left: 4px solid #F95738;
+    border-left: 4px solid var(--primary-orange);
   }
 
   .problem-card:hover {
@@ -882,10 +882,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   }
 
   .btn-secondary {
-    background: transparent;
-    color: var(--primary-orange);
+    background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
+    color: white;
     padding: 1rem 2rem;
-    border: 2px solid var(--primary-orange);
+    border: none;
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: 700;
@@ -893,12 +893,14 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     letter-spacing: 0.5px;
     transition: var(--transition);
     display: inline-block;
+    box-shadow: var(--shadow-button);
   }
 
   .btn-secondary:hover {
-    background: var(--primary-orange);
+    background: linear-gradient(135deg, var(--accent-coral), var(--primary-orange));
     color: white;
     transform: translateY(-3px);
+    box-shadow: var(--shadow-button-hover);
   }
 
   /* Back to Top Button */

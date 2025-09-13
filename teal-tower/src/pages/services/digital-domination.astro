@@ -425,7 +425,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     color: var(--text-primary);
     line-height: 1.1;
     margin-bottom: 3rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -441,7 +441,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     line-height: 1.6;
     margin-bottom: 3rem;
     font-weight: 400;
-    max-width: 600px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -527,7 +527,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     box-shadow: var(--shadow);
     transition: var(--transition);
     text-align: center;
-    border-left: 4px solid #F95738;
+    border-left: 4px solid var(--primary-orange);
   }
 
   .problem-card:hover {
@@ -835,15 +835,17 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   }
 
   .btn-secondary {
-    background: var(--white);
-    color: var(--primary-orange);
-    border: 2px solid var(--primary-orange);
+    background: linear-gradient(135deg, var(--primary-orange), var(--accent-terracotta));
+    color: white;
+    border: none;
+    box-shadow: var(--shadow-button);
   }
 
   .btn-secondary:hover {
-    background: var(--primary-orange);
+    background: linear-gradient(135deg, var(--accent-coral), var(--primary-orange));
     color: white;
     transform: translateY(-3px);
+    box-shadow: var(--shadow-button-hover);
   }
 
   /* Final CTA Section */
@@ -960,9 +962,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
   /* Color Variables */
   :root {
-    --primary-orange: #F95738;
-    --accent-coral: #FF6B47;
-    --accent-terracotta: #E85A4F;
+    --primary-orange: #D2361A;
+    --button-orange: #D2361A;
+    --accent-coral: #D2361A;
+    --accent-terracotta: #D2361A;
     --text-primary: #2D3748;
     --text-secondary: #4A5568;
     --text-light: #718096;

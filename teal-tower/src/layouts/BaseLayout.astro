@@ -132,18 +132,18 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     }
     
     :root {
-      /* Warm Pastel Color Palette */
+      /* Warm Pastel Color Palette with Accessible Contrast */
       --primary-bg: #FEFCF3;
       --secondary-bg: #F8F6F1;
       --text-primary: #1A202C;
       --text-secondary: #2D3748;
       --text-light: #4A5568;
-      --primary-orange: #F95738;
-      --button-orange: #F95738;
+      --primary-orange: #D2361A;
+      --button-orange: #D2361A;
       --secondary-peach: #FFAB91;
-      --accent-coral: #F95738;
-      --accent-terracotta: #F95738;
-      --link-orange: #F95738;
+      --accent-coral: #D2361A;
+      --accent-terracotta: #D2361A;
+      --link-orange: #D2361A;
       --white: #FFFFFF;
       --shadow: 0 4px 20px rgba(45, 55, 72, 0.1);
       --shadow-hover: 0 8px 30px rgba(45, 55, 72, 0.15);
@@ -598,10 +598,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     }
     
     .btn-secondary {
-      background: transparent;
-      color: var(--primary-orange);
+      background: linear-gradient(135deg, var(--button-orange), var(--accent-terracotta));
+      color: white;
       padding: 1rem 2rem;
-      border: 2px solid var(--primary-orange);
+      border: none;
       border-radius: var(--border-radius);
       text-decoration: none;
       font-weight: 600;
@@ -609,13 +609,14 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       transition: var(--transition);
       font-size: 1rem;
       line-height: 1.2;
+      box-shadow: var(--shadow-button);
     }
     
     .btn-secondary:hover {
-      background: var(--primary-orange);
+      background: linear-gradient(135deg, var(--accent-coral), var(--button-orange));
       color: white;
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-button-hover);
     }
     
     .section-title {

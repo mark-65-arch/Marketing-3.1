@@ -22,7 +22,7 @@ const { title, description, features, targetKeywords } = Astro.props;
 <style>
   .service-card {
     background: transparent;
-    padding: 3rem 2.5rem;
+    padding: 2rem 2rem;
     transition: all 0.4s ease;
     height: 100%;
     display: flex;
@@ -30,14 +30,18 @@ const { title, description, features, targetKeywords } = Astro.props;
     text-align: left;
     border-radius: 12px;
     border: 1px solid transparent;
-    min-height: 400px;
+    min-height: 320px;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
   }
   
   .service-card:hover {
     background: linear-gradient(135deg, rgba(249, 87, 56, 0.08), rgba(255, 255, 255, 0.95));
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     box-shadow: 0 15px 35px rgba(249, 87, 56, 0.15);
     border: 1px solid rgba(249, 87, 56, 0.2);
+    z-index: 2;
   }
   
   .service-title {
