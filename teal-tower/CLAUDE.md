@@ -57,9 +57,19 @@ const base = import.meta.env.MODE === 'development' ? '/' : (import.meta.env.BAS
 2. Test both development (`npm run dev`) and production (`npm run preview`) environments
 3. Images should be in WebP format for optimal performance
 4. Never hardcode absolute paths - always use the base path variable
+5. **Git Commands**: We're already in `/teal-tower` directory - use `git status`, `git add .`, etc. directly without `cd teal-tower &&` prefix
+
+## Recent Updates (Latest Session)
+- Updated hero text max-widths: title 1200px, subtitle 900px
+- Standardized all buttons to orange background (#D2361A) with white text
+- Fixed logo AI text color consistency across all pages
+- Resolved service cards overlapping with optimized spacing (row-gap: 4rem)
+- Fixed CSS variable circular reference in digital-domination page
+- All changes committed and pushed successfully
 
 ## Deployment Status
 ✅ All navigation links working
 ✅ All contact buttons working  
 ✅ Images optimized and loading correctly
 ✅ GitHub Pages deployment successful
+✅ Design consistency improvements deployed

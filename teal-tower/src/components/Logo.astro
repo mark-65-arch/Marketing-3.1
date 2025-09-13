@@ -124,4 +124,22 @@ const { size = 'medium', className = '', href = '/' } = Astro.props;
   .logo.large .logo-houston {
     font-size: 1.3rem;
   }
+  
+  /* Mobile responsive logo sizing */
+  @media (max-width: 768px) {
+    .logo.medium .logo-svg {
+      width: 45px;
+      height: 45px;
+    }
+    
+    .logo.medium .logo-marketing,
+    .logo.medium .logo-ai,
+    .logo.medium .logo-houston {
+      font-size: 0.95rem;
+    }
+    
+    .logo {
+      gap: 0.3rem;
+    }
+  }
 </style>
