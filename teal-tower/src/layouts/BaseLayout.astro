@@ -9,8 +9,8 @@ export interface Props {
 
 const { title, description, keywords = "Houston digital marketing, SEO services Houston, website design Houston, business profile optimization" } = Astro.props;
 
-// Get the base path from the site configuration - only use base path in production
-const base = import.meta.env.MODE === 'development' ? '/' : (import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/');
+// Get the base path from the site configuration
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 ---
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ const base = import.meta.env.MODE === 'development' ? '/' : (import.meta.env.BAS
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
   <meta name="generator" content={Astro.generator} />
   
   <!-- SEO Meta Tags -->
@@ -94,9 +94,9 @@ const base = import.meta.env.MODE === 'development' ? '/' : (import.meta.env.BAS
       /* Warm Pastel Color Palette */
       --primary-bg: #FEFCF3;
       --secondary-bg: #F8F6F1;
-      --text-primary: #2D3748;
-      --text-secondary: #4A5568;
-      --text-light: #718096;
+      --text-primary: #1A202C;
+      --text-secondary: #2D3748;
+      --text-light: #4A5568;
       --primary-orange: #F95738;
       --button-orange: #F95738;
       --secondary-peach: #FFAB91;
