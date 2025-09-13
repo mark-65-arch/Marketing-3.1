@@ -4,6 +4,9 @@ import ServiceCard from '../components/ServiceCard.astro';
 import IndustrySection from '../components/IndustrySection.astro';
 import FaqSection from '../components/FaqSection.astro';
 
+// Get the base path from the site configuration
+const base = import.meta.env.BASE_URL;
+
 const services = [
   {
     title: "Website Building",
@@ -193,7 +196,7 @@ const houstonAreas = {
             <li>✓ Review generation templates and training</li>
             <li>✓ GMB messaging setup with auto-replies</li>
           </ul>
-          <a href="/services/google-business-profile" class="service-learn-more">Learn More →</a>
+          <a href={`${base}services/google-business-profile`} class="service-learn-more">Learn More →</a>
         </div>
         <div class="pricing-card">
           <h3 class="pricing-title">Complete Digital Foundation</h3>
@@ -207,7 +210,7 @@ const houstonAreas = {
             <li>✓ Google Analytics setup</li>
             <li>✓ All Google Business Profile services included</li>
           </ul>
-          <a href="/services/digital-foundation" class="service-learn-more">Learn More →</a>
+          <a href={`${base}services/digital-foundation`} class="service-learn-more">Learn More →</a>
         </div>
         <div class="pricing-card featured">
           <h3 class="pricing-title">Complete Digital Domination</h3>
@@ -222,7 +225,7 @@ const houstonAreas = {
             <li>✓ All Google Business Profile services included</li>
             <li>✓ 90-day optimization period with monthly check-ins</li>
           </ul>
-          <a href="/services/digital-domination" class="service-learn-more">Learn More →</a>
+          <a href={`${base}services/digital-domination`} class="service-learn-more">Learn More →</a>
         </div>
       </div>
     </div>
