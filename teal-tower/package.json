@@ -12,7 +12,8 @@
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.5.1",
     "@replit/vite-plugin-cartographer": "^0.3.0",
-    "astro": "^5.13.7"
+    "astro": "^5.13.7",
+    "astro-compress": "^2.3.8"
   },
   "devDependencies": {
     "@types/node": "^24.3.1",

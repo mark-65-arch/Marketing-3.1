@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 
 import sitemap from '@astrojs/sitemap';
 import partytown from '@astrojs/partytown';
+import compress from 'astro-compress';
 
 // https://astro.build/config
 export default defineConfig({
@@ -24,7 +25,8 @@ export default defineConfig({
   // Performance optimizations
   vite: {
     build: {
-      cssMinify: true,
+      cssMinify: 'esbuild',
+      minify: 'esbuild',
       rollupOptions: {
         output: {
           // Better CSS chunking for performance
@@ -33,23 +35,32 @@ export default defineConfig({
           },
           assetFileNames: (assetInfo) => {
             let extType = assetInfo.name.split('.').at(1);
-            if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            if (/png|jpe?g|svg|gif|tiff|bmp|ico|webp/i.test(extType)) {
               extType = 'img';
             }
             return `assets/${extType}/[name]-[hash][extname]`;
           },
         }
-      }
+      },
+      chunkSizeWarningLimit: 1000,
+      assetsInlineLimit: 4096
     },
     css: {
       devSourcemap: false
+    },
+    ssr: {
+      noExternal: ['astro']
     }
   },
 
   // Build optimizations
   build: {
-    inlineStylesheets: 'auto'
+    inlineStylesheets: 'always',
+    assets: 'assets'
   },
+
+  // Add compressor integration for better performance
+  compressHTML: true,
 
   integrations: [
     sitemap(), 
@@ -57,6 +68,18 @@ export default defineConfig({
       config: {
         forward: ["dataLayer.push"]
       }
+    }),
+    compress({
+      CSS: true,
+      HTML: {
+        removeAttributeQuotes: false,
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true
+      },
+      Image: false,
+      JavaScript: true,
+      SVG: true
     })
   ]
 });

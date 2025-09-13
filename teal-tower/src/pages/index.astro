@@ -103,10 +103,16 @@ const houstonAreas = {
 >
   <!-- Hero Section -->
   <section class="hero">
-    <img src={`${base}houston-digital-marketing-near-me-searches-contractors.webp`} 
+    <img src={`${base}houston-digital-marketing-near-me-searches-contractors-1200w.webp`} 
+         srcset={`${base}houston-digital-marketing-near-me-searches-contractors-800w.webp 800w, ${base}houston-digital-marketing-near-me-searches-contractors-1200w.webp 1200w`}
+         sizes="(max-width: 768px) 100vw, 1200px"
          alt="Houston digital marketing services helping contractors, auto shops, cleaning services and pet businesses get found when customers search near me" 
          class="hero-background-image" 
-         fetchpriority="high" />
+         fetchpriority="high"
+         loading="eager"
+         decoding="sync"
+         width="976"
+         height="549" />
     <div class="container">
       <div class="hero-content" style="position: relative; z-index: 2;">
         <h1 class="hero-title">
