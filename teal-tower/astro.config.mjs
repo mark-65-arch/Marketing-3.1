@@ -6,7 +6,7 @@ import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://aimarketing.github.io',
+  site: 'https://mark-65-arch.github.io',
   base: '/Marketing-3.1',
   
   server: {
