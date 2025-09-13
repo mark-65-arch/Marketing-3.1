@@ -596,10 +596,10 @@ const base = import.meta.env.MODE === 'development' ? '/' : (import.meta.env.BAS
 <body>
   <nav class="nav-container">
     <div class="nav-wrapper">
-      <Logo size="medium" />
+      <Logo size="medium" href={base} />
       
       <ul class="nav-menu">
-        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href={base} class="nav-link">Home</a></li>
         <li class="nav-dropdown">
           <a href="#" class="nav-link dropdown-toggle">Services ▼</a>
           <ul class="dropdown-menu">

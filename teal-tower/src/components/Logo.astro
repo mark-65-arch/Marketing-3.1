@@ -3,12 +3,13 @@
 export interface Props {
   size?: 'small' | 'medium' | 'large';
   className?: string;
+  href?: string;
 }
 
-const { size = 'medium', className = '' } = Astro.props;
+const { size = 'medium', className = '', href = '/' } = Astro.props;
 ---
 
-<a href="/" class={`logo ${size} ${className}`}>
+<a href={href} class={`logo ${size} ${className}`}>
   <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <!-- Light bulb outline -->
     <path d="M50 10c-15 0-27 12-27 27 0 8 4 15 9 20 3 3 5 7 5 11v5h26v-5c0-4 2-8 5-11 5-5 9-12 9-20 0-15-12-27-27-27z" 
